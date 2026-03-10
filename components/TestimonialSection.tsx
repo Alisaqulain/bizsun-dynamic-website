@@ -21,18 +21,18 @@ export default function TestimonialSection() {
 
 
   const testimonialImages = [
-    "/picture1.png",
-    "/picture3.png",
-    "/picture4.png",
-    "/picture5.png",
-    "/picture6.png",
-    "/picture7.png",
-    "/picture8.png",
-    "/picture9.png",
-    "/picture10.png",
-    "/picture11.png",
-    "/picture12.png",
-    "/picture13.png",
+    "/Picture1.png",
+    "/Picture3.png",
+    "/Picture4.png",
+    "/Picture5.png",
+    "/Picture6.png",
+    "/Picture7.png",
+    "/Picture8.png",
+    "/Picture9.png",
+    "/Picture10.png",
+    "/Picture11.png",
+    "/Picture12.png",
+    "/Picture13.png",
   ];
 
   useEffect(() => {
