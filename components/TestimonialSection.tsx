@@ -39,7 +39,7 @@ export default function TestimonialSection() {
     if (testimonialImages.length <= 1) return;
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % testimonialImages.length);
-    }, 4000);
+    }, 2000);
     return () => clearInterval(interval);
   }, [testimonialImages.length]);
 
