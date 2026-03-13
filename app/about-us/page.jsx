@@ -62,7 +62,7 @@ export default function Home() {
           <div className="flex-1 flex justify-center md:justify-end">
             <div className="relative w-56 h-72 sm:w-64 sm:h-80 md:w-80 md:h-96">
               <Image
-                src="/Frame 30.png"
+                src="/founder.jpeg"
                 alt="Abhinav - Founder & Strategic Lead"
                 fill
                 className="object-cover rounded-lg"
