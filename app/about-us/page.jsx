@@ -3,7 +3,15 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-export default function Home() {
+export const metadata = {
+  title: "About Us | Digital Agency – Our Story & Team",
+  description:
+    "Bizsun Creative is a full-service digital agency. Learn our story, meet our founder, and discover our approach to strategy, design, and technology for scalable growth.",
+  keywords: ["about Bizsun Creative", "digital agency team", "founder", "our story", "digital strategy"],
+  openGraph: { title: "About Bizsun Creative | Our Story & Team", url: "/about-us" },
+};
+
+export default function AboutUsPage() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Gradient Background */}

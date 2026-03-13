@@ -5,7 +5,15 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 
-export default function Home() {
+export const metadata = {
+  title: "Industry-Focused Solutions | E-commerce, Healthcare, FinTech",
+  description:
+    "Industry solutions: e-commerce, healthcare technology, FinTech, and EdTech. Tailored digital solutions for your sector with compliance and scale.",
+  keywords: ["e-commerce solutions", "healthcare technology", "FinTech", "EdTech", "industry solutions"],
+  openGraph: { title: "Industry-Focused Solutions | Bizsun Creative", url: "/industry-focused" },
+};
+
+export default function IndustryFocusedPage() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Gradient Background */}

@@ -5,7 +5,15 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 
-export default function Home() {
+export const metadata = {
+  title: "Automation & CRM Solutions | Workflow & Sales",
+  description:
+    "CRM implementation, business process automation, marketing automation, and sales pipeline management. Streamline workflows and scale operations.",
+  keywords: ["CRM", "automation", "marketing automation", "sales pipeline", "business process automation"],
+  openGraph: { title: "Automation & CRM Solutions | Bizsun Creative", url: "/automation" },
+};
+
+export default function AutomationPage() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Gradient Background */}

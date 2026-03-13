@@ -5,7 +5,15 @@ import TestimonialSection from "@/components/TestimonialSection";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-export default function Home() {
+export const metadata = {
+  title: "Analytics & Growth Solutions | Data & CRO",
+  description:
+    "Data analytics, conversion rate optimization (CRO), business intelligence dashboards, and growth strategy. Data-driven insights for sustainable growth.",
+  keywords: ["analytics", "CRO", "business intelligence", "data analytics", "growth strategy", "dashboards"],
+  openGraph: { title: "Analytics & Growth Solutions | Bizsun Creative", url: "/analytics" },
+};
+
+export default function AnalyticsPage() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Gradient Background */}

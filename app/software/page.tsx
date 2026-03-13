@@ -1,11 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import FAQSection from "../faq-section";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Software Development | Custom & Enterprise Solutions",
+  description:
+    "Custom software development, enterprise solutions, API development & integration, and software maintenance. Scalable, secure systems that power business growth.",
+  keywords: ["custom software development", "enterprise software", "API development", "software solutions", "Bizsun"],
+  openGraph: { title: "Software Development Services | Bizsun Creative", url: "/software" },
+};
+
+export default function SoftwarePage() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Gradient Background */}

@@ -49,7 +49,7 @@ export default function Header() {
       {/* Desktop CTA Button */}
       <Link href="/contact" className="hidden md:flex bg-green-600 text-white px-4 lg:px-6 py-2 lg:py-3 rounded-full text-sm lg:text-base font-medium hover:bg-green-700 transition-all duration-300 items-center gap-2 hover:scale-105 hover:shadow-lg">
         Let&apos;s Collaborate
-        <img src="/Background.png" alt="" className="w-4 h-4" />
+        <img src="/Background.png" alt="" className="w-4 h-4" role="presentation" aria-hidden="true" />
       </Link>
 
       {/* Mobile Menu Button */}
@@ -120,7 +120,7 @@ export default function Header() {
               className="mt-2 bg-green-600 text-white px-6 py-3 rounded-full font-medium hover:bg-green-700 transition-all duration-300 flex items-center justify-center gap-2"
             >
               Let&apos;s Collaborate
-              <img src="/Background.png" alt="" className="w-4 h-4" />
+              <img src="/Background.png" alt="" className="w-4 h-4" role="presentation" aria-hidden="true" />
             </Link>
           </nav>
         </div>

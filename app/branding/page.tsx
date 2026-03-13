@@ -1,11 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import FAQSection from "../faq-section";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Website & Branding | Design, UI/UX & Brand Identity",
+  description:
+    "Website design & development, UI/UX design, branding and creative design. Responsive websites and brand identity that build trust and drive growth.",
+  keywords: ["website design", "branding", "UI/UX design", "brand identity", "web development", "creative design"],
+  openGraph: { title: "Website & Branding Services | Bizsun Creative", url: "/branding" },
+};
+
+export default function BrandingPage() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Gradient Background */}

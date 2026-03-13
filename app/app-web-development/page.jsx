@@ -5,7 +5,15 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 
-export default function Home() {
+export const metadata = {
+  title: "App & Web Development | Mobile, iOS, Android & Web Apps",
+  description:
+    "Android, iOS, and cross-platform app development. Web applications, SaaS, and app maintenance. Flutter, React Native, and custom web solutions.",
+  keywords: ["app development", "web development", "Android app", "iOS app", "Flutter", "React Native", "mobile app"],
+  openGraph: { title: "App & Web Development | Bizsun Creative", url: "/app-web-development" },
+};
+
+export default function AppWebDevelopmentPage() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Gradient Background */}

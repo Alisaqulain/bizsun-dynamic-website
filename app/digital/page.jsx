@@ -5,7 +5,15 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 
-export default function Home() {
+export const metadata = {
+  title: "Digital Marketing | SEO, Social Media & Content",
+  description:
+    "Digital marketing services: SEO, SEM, social media marketing, content marketing, and email marketing. Data-driven campaigns that drive growth and engagement.",
+  keywords: ["digital marketing", "SEO services", "SEM", "social media marketing", "content marketing", "email marketing"],
+  openGraph: { title: "Digital Marketing Services | Bizsun Creative", url: "/digital" },
+};
+
+export default function DigitalPage() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Gradient Background */}

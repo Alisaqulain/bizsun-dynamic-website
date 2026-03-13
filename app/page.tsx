@@ -1,9 +1,33 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import FAQSection from "./faq-section";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
+
+export const metadata: Metadata = {
+  title: "Digital Agency | Software, Marketing, Design & Technology",
+  description:
+    "Bizsun Creative builds scalable digital growth with strategy, design & technology. Custom software, digital marketing, SEO, branding, web & app development, analytics & automation for businesses.",
+  keywords: [
+    "digital agency",
+    "software development",
+    "digital marketing",
+    "web development",
+    "app development",
+    "branding",
+    "SEO",
+    "digital growth",
+    "Bizsun Creative",
+  ],
+  openGraph: {
+    title: "Bizsun Creative | Building Scalable Digital Growth",
+    description:
+      "Strategy, design & technology. Software development, digital marketing, branding, web & app development, analytics & automation.",
+    url: "/",
+  },
+};
 
 export default function Home() {
   return (
@@ -32,13 +56,13 @@ export default function Home() {
         <main className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 flex flex-col items-center text-center relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh]">
           {/* Labels with arrows - hidden on mobile */}
           <div className="hidden md:block absolute top-10 right-[30%] animate-float animation-delay-100">
-            <img src="/Group 27166.png" alt="" />
+            <img src="/Group 27166.png" alt="Digital growth and strategy" />
           </div>
           <div className="hidden md:block absolute top-90 left-[7%] animate-float animation-delay-300">
-            <img src="/Group 27165.png" alt="" />
+            <img src="/Group 27165.png" alt="Design and technology" />
           </div>
           <div className="hidden md:block absolute top-80 right-[2%] animate-float animation-delay-500">
-            <img src="/Group 27164.png" alt="" />
+            <img src="/Group 27164.png" alt="Marketing and automation" />
           </div>
 
           {/* Main Headline */}
@@ -98,19 +122,19 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-4 sm:mb-6">
                   <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-black flex-1">Software Development</h3>
                   <div className="flex items-center justify-center rounded-xl ml-2 sm:ml-4 flex-shrink-0">
-                    <img src="/235722202_11102932 copy 1.png" alt="" className="w-12 h-12 sm:w-16 sm:h-16" />                    </div>
+                    <img src="/235722202_11102932 copy 1.png" alt="Software development icon" className="w-12 h-12 sm:w-16 sm:h-16" />                    </div>
                 </div>
 
                 <div className="flex-grow mb-6 space-y-4">
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
                     <div>
                       <p className="font-semibold text-black">Custom Software Development</p>
                       <p className="text-sm text-gray-600">Tailored solutions for your business needs</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Enterprise Software Solutions</p>
@@ -118,7 +142,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">API Development & Integration</p>
@@ -126,7 +150,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Software Maintenance & Support</p>
@@ -153,19 +177,19 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-6">
                   <h3 className="text-3xl font-bold text-black flex-1">Digital Marketing</h3>
                   <div className="flex items-center justify-center rounded-xl ml-4">
-                    <img src="/235722202_11102932 copy 1.png" alt="" className="" />                    </div>
+                    <img src="/235722202_11102932 copy 1.png" alt="Service icon" className="" />                    </div>
                 </div>
 
                 <div className="flex-grow mb-6 space-y-4">
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
                     <div>
                       <p className="font-semibold text-black">SEO & SEM</p>
                       <p className="text-sm text-gray-600">Search engine optimization and marketing strategies</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Social Media Marketing</p>
@@ -173,7 +197,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Content Marketing</p>
@@ -181,7 +205,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Email Marketing</p>
@@ -209,13 +233,13 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-6">
                   <h3 className="text-3xl font-bold text-black flex-1">Website, App & Branding Services</h3>
                   <div className="flex items-center justify-center rounded-xl ml-4">
-                    <img src="/235722202_11102932 copy 1.png" alt="" className="" />                    </div>
+                    <img src="/235722202_11102932 copy 1.png" alt="Service icon" className="" />                    </div>
 
                 </div>
 
                 <div className="flex-grow mb-6 space-y-4">
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Website Design & Development</p>
@@ -223,7 +247,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">UI/UX Design</p>
@@ -231,7 +255,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Branding & Creative Design</p>
@@ -260,13 +284,13 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-6">
                   <h3 className="text-3xl font-bold text-black flex-1">App & Web Development</h3>
                   <div className="flex items-center justify-center rounded-xl ml-4">
-                    <img src="/235722202_11102932 copy 1.png" alt="" className="" />                    </div>
+                    <img src="/235722202_11102932 copy 1.png" alt="Service icon" className="" />                    </div>
 
                 </div>
 
                 <div className="flex-grow mb-6 space-y-4">
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Android App Development</p>
@@ -274,7 +298,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">iOS App Development</p>
@@ -282,7 +306,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Cross-Platform App Development</p>
@@ -290,7 +314,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Web Application Development</p>
@@ -298,7 +322,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">App Maintenance & Support</p>
@@ -326,13 +350,13 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-6">
                   <h3 className="text-3xl font-bold text-black flex-1">Analytics & Growth Solutions</h3>
                   <div className="flex items-center justify-center rounded-xl ml-4">
-                    <img src="/235722202_11102932 copy 1.png" alt="" className="" />                    </div>
+                    <img src="/235722202_11102932 copy 1.png" alt="Service icon" className="" />                    </div>
 
                 </div>
 
                 <div className="flex-grow mb-6 space-y-4">
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Data Analytics & Reporting</p>
@@ -340,7 +364,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Conversion Rate Optimization (CRO)</p>
@@ -348,7 +372,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Business Intelligence & Dashboards</p>
@@ -356,7 +380,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Growth Strategy & Consulting</p>
@@ -386,13 +410,13 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-6">
                   <h3 className="text-3xl font-bold text-black flex-1">Automation & CRM Solutions</h3>
                   <div className="flex items-center justify-center rounded-xl ml-4">
-                    <img src="/235722202_11102932 copy 1.png" alt="" className="" />                    </div>
+                    <img src="/235722202_11102932 copy 1.png" alt="Service icon" className="" />                    </div>
 
                 </div>
 
                 <div className="flex-grow mb-6 space-y-4">
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">CRM Implementation & Customization</p>
@@ -400,7 +424,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Business Process Automation</p>
@@ -408,7 +432,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Marketing Automation</p>
@@ -416,7 +440,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Sales Pipeline Management</p>
@@ -447,13 +471,13 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-6">
                   <h3 className="text-3xl font-bold text-black flex-1">Industry-Focused Solutions</h3>
                   <div className="flex items-center justify-center rounded-xl ml-4">
-                    <img src="/235722202_11102932 copy 1.png" alt="" className="" />                    </div>
+                    <img src="/235722202_11102932 copy 1.png" alt="Service icon" className="" />                    </div>
 
                 </div>
 
                 <div className="flex-grow mb-6 space-y-4">
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">E-commerce Solutions</p>
@@ -461,7 +485,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Healthcare Technology</p>
@@ -469,7 +493,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">FinTech Solutions</p>
@@ -477,7 +501,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" role="presentation" />
 
                     <div>
                       <p className="font-semibold text-black">Education Technology</p>
@@ -743,7 +767,7 @@ export default function Home() {
                {/* CTA Button */}
                <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
           Let&apos;s Collaborate
-           <img src="/Background (1).png" alt="" className="inline ml-3 mb-1" />
+           <img src="/Background (1).png" alt="Arrow" className="inline ml-3 mb-1" role="presentation" />
           </Link>
             </div>
 
