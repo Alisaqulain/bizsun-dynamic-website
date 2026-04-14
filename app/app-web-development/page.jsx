@@ -4,6 +4,7 @@ import FAQSection from "../faq-section";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
+import TeamSection from "../components/TeamSection";
 
 export const metadata = {
   title: "App & Web Development | Mobile, iOS, Android & Web Apps",
@@ -406,97 +407,7 @@ Real Business Growth
 
         <TestimonialSection />
 
-          {/* Team Section */}
-          <section 
-            className="w-full py-20 px-6"
-            style={{
-              background: 'linear-gradient(to bottom right, rgba(100, 203, 113, 0.1), rgba(255, 240, 150, 0.2))'
-            }}
-          >
-                        {/* Meet the Team Section */}
-<div className="">
-  <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 text-center mb-14">
-    Meet the creative minds <br />
-    behind <span className="italic font-normal">our success</span>
-  </h2>
-
-  {/* Profile Cards Slider */}
-  <div className="overflow-hidden mb-10 relative">
-    <style dangerouslySetInnerHTML={{__html: `
-      @keyframes scroll-right-to-left {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(calc(-100% / 2));
-        }
-      }
-      .slider-infinite {
-        animation: scroll-right-to-left 25s linear infinite;
-        width: max-content;
-      }
-      .slider-infinite:hover {
-        animation-play-state: paused;
-      }
-      @media (max-width: 640px) {
-        .slider-infinite {
-          animation: scroll-right-to-left 30s linear infinite;
-        }
-      }
-    `}} />
-    <div className="flex slider-infinite">
-      {[
-        { name: "Shreya Gupta", role: "Graphic Designer", image: "/WhatsApp Image 2026-01-17 at 10.52.06 AM.jpeg" },
-        { name: "Praful Kumar", role: "A Video Editor and Graphic Designer", image: "/WhatsApp Image 2026-01-16 at 1.55.21 PM.jpeg" },
-        { name: "Syed Ali Zaddi", role: "Web & App Developer", image: "/WhatsApp Image 2026-01-16 at 1.56.10 PM.jpeg" }
-      ].concat([
-        { name: "Anas Ansari", role: "Web & App Developer <br />  SEO Expert", image: "/IMG-20241207-WA0010.jpg" },
-        { name: "Priyanka Chopra", role: "Social Media Specialist", image: "/WhatsApp Image 2026-01-16 at 1.55.21 PM.jpeg" },
-        { name: "Priyanka Chopra", role: "UI / UX Designer", image: "/WhatsApp Image 2026-01-16 at 1.56.10 PM.jpeg" }
-      ]).map((member, index) => (
-        <div
-          key={index}
-          className="flex-shrink-0 w-screen sm:w-[400px] md:w-[350px] px-4"
-        >
-          <div
-            className="rounded-3xl p-2 shadow-md bg-yellow-300 hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-2"
-            style={{ border: '1px solid #DFF2E1' }}
-          >
-            <div className="relative w-full h-92 rounded-2xl overflow-hidden bg-yellow-300">
-              <Image
-                src={member.image}
-                alt={member.name}
-                fill
-                className="object-cover"
-              />
-              <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-[85%] bg-[#DFF2E1] rounded-b-3xl rounded-t-3xl px-2 py-2 text-center">
-                <h3 className="text-lg font-bold text-gray-900">
-                  {member.name}
-                </h3>
-                <p className="text-sm text-gray-700" dangerouslySetInnerHTML={{ __html: member.role }}></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-    {/* Let's Collaborate Section */}
-    <div className="text-center">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                  Let&apos;s shape the future of your <span className="italic font-serif">brand</span>
-                </h2>
-                <p className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
-                  From strategy to execution, we help brands grow with clarity, consistency, and thoughtfully crafted digital solutions.
-                </p>
-                   {/* CTA Button */}
-          <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
-          Let&apos;s Collaborate
-           <img src="/Background (1).png" alt="" className="inline ml-3 mb-1" />
-          </Link>
-              </div>
-</div>
- </section>
+        <TeamSection />
 </div>
 
 
