@@ -1,4 +1,5 @@
-import Image from "next/image";
+﻿import Image from "next/image";
+import ArrowIcon from "../components/icons/ArrowIcon";
 import Link from "next/link";
 import type { Metadata } from "next";
 import FAQSection from "../faq-section";
@@ -6,6 +7,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 import TeamSection from "../components/TeamSection";
+import TrustSection from "../components/TrustSection";
 
 export const metadata: Metadata = {
   title: "Software Development | Custom & Enterprise Solutions",
@@ -68,26 +70,17 @@ Your Business Growth
           We build custom software solutions tailored to your business needs. From enterprise systems to API integrations, <br /> we deliver scalable, secure, and maintainable software that drives real business value.          </p>
 
           {/* CTA Button */}
-          <Link href="/contact" className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400 inline-block" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="btn-glow btn-glow-lg animate-fadeInUp animation-delay-400">
             Get in Touch
           </Link>
 
           {/* Trusted By Section */}
         </main>
       </div>
-          <div className="mt-[-30] w-full flex flex-col items-center"   style={{
+      <TrustSection variant="strip" />
+          <div className="w-full flex flex-col items-center" style={{
               background: 'linear-gradient(to bottom right, rgba(100, 203, 113, 0.1), rgba(255, 240, 150, 0.2))'
             }}>
-            <Image
-              src="/Container.png"
-              alt="Trusted By Companies"
-              width={1200}
-              height={200}
-              className=" w-full max-w-8xl"
-            />
-         
-
-       
 
           {/* Digital Marketing Challenges & Solution Section */}
           
@@ -109,22 +102,22 @@ Your Business Growth
                   </h2>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Using generic software that doesn't fit your workflow?</p>
                     </li>
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Systems that don't scale with your business?</p>
                     </li>
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Struggling with system integrations and data silos?</p>
                     </li>
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Need ongoing support but can't find reliable developers?</p>
                     </li>
@@ -156,7 +149,7 @@ Your Business Growth
                     Our software development process is built on understanding your business needs first. We design and build custom solutions that integrate seamlessly with your existing systems, scale with your growth, and deliver measurable value. From initial planning to deployment and ongoing maintenance, we ensure your software works for your business—not against it.
                   </p>
                   {/* CTA Button */}
-          <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="btn-glow animate-fadeInUp animation-delay-400">
           Questions? Talk to us
 
           </Link>
@@ -197,7 +190,7 @@ Your Business Growth
                   {/* Left: Services List */}
                   <div className="space-y-6">
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Custom Software Development</p>
@@ -205,7 +198,7 @@ Your Business Growth
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Enterprise Software Solutions</p>
@@ -213,7 +206,7 @@ Your Business Growth
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">API Development & Integration</p>
@@ -221,7 +214,7 @@ Your Business Growth
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Software Maintenance & Support</p>
@@ -265,22 +258,22 @@ Your Business Growth
                 </h2>
                 <div className="max-w-4xl space-y-4">
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Growing businesses</span> needing custom software solutions</p>
                   </div>
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Enterprises</span> requiring scalable and integrated systems</p>
                   </div>
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Companies</span> struggling with system integrations</p>
                   </div>
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Organizations</span> needing ongoing software maintenance</p>
                   </div>

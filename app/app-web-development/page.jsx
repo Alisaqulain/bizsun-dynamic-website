@@ -1,10 +1,12 @@
-import Image from "next/image";
+﻿import Image from "next/image";
+import ArrowIcon from "../components/icons/ArrowIcon";
 import Link from "next/link";
 import FAQSection from "../faq-section";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 import TeamSection from "../components/TeamSection";
+import TrustSection from "../components/TrustSection";
 
 export const metadata = {
   title: "App & Web Development | Mobile, iOS, Android & Web Apps",
@@ -67,26 +69,17 @@ Real Business Growth
           We build scalable, secure, and high-performance web and mobile applications that help businesses grow faster and smarter. <br /> From intuitive mobile apps to robust web platforms, we create digital systems that support long-term success.          </p>
 
           {/* CTA Button */}
-          <Link href="/contact" className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400 inline-block" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="btn-glow btn-glow-lg animate-fadeInUp animation-delay-400">
             Get in Touch
           </Link>
 
           {/* Trusted By Section */}
         </main>
       </div>
-          <div className="mt-[-30] w-full flex flex-col items-center"   style={{
+      <TrustSection variant="strip" />
+          <div className="w-full flex flex-col items-center" style={{
               background: 'linear-gradient(to bottom right, rgba(100, 203, 113, 0.1), rgba(255, 240, 150, 0.2))'
             }}>
-            <Image
-              src="/Container.png"
-              alt="Trusted By Companies"
-              width={1200}
-              height={200}
-              className=" w-full max-w-8xl"
-            />
-         
-
-       
 
           {/* Digital Marketing Challenges & Solution Section */}
           
@@ -108,22 +101,22 @@ Real Business Growth
                   </h2>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Mobile app performance issues affecting user experience?</p>
                     </li>
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Web application not scaling with your business needs?</p>
                     </li>
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Need cross-platform solutions but unsure which technology to use?</p>
                     </li>
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Struggling with app maintenance and updates?</p>
                     </li>
@@ -155,7 +148,7 @@ Real Business Growth
                     Our development process is driven by clarity, collaboration, and performance. We start by understanding your business requirements, users, and long-term goals. From planning architecture to UI/UX design, development, testing, and deployment, every step is carefully executed. We focus on clean code, secure systems, and scalable infrastructure—ensuring your digital product performs reliably today and in the future.
                   </p>
                     {/* CTA Button */}
-          <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="btn-glow animate-fadeInUp animation-delay-400">
           Questions? Talk to us
 
           </Link>
@@ -196,7 +189,7 @@ Real Business Growth
                   {/* Left: Services List */}
                   <div className="space-y-6">
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Android App Development</p>
@@ -204,7 +197,7 @@ Real Business Growth
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">iOS App Development</p>
@@ -212,7 +205,7 @@ Real Business Growth
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Cross-Platform App Development</p>
@@ -220,7 +213,7 @@ Real Business Growth
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Web Application Development</p>
@@ -228,7 +221,7 @@ Real Business Growth
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">App Maintenance & Support</p>
@@ -272,22 +265,22 @@ Real Business Growth
                 </h2>
                 <div className="max-w-4xl space-y-4">
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Startups</span> needing mobile or web apps to launch their business</p>
                   </div>
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Growing businesses</span> requiring scalable web applications</p>
                   </div>
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Companies</span> needing cross-platform mobile solutions</p>
                   </div>
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Organizations</span> looking for app maintenance and support</p>
                   </div>

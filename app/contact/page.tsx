@@ -3,6 +3,9 @@
 import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import TrustSection from "../components/TrustSection";
+import TestimonialSection from "@/components/TestimonialSection";
+import TeamSection from "../components/TeamSection";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -27,16 +30,11 @@ export default function ContactPage() {
     // You can add API call here
   };
 
-  return (
-    <div className="min-h-screen flex flex-col">
-      {/* Background with gradient */}
-      <div 
-        className="absolute inset-0"
-        style={{ 
-          background: 'linear-gradient(to bottom, rgba(100, 203, 113, 0.2), rgba(255, 255, 255, 1))',
-        }}
-      />
+  const fieldClass =
+    "w-full px-4 py-3.5 rounded-xl border border-white/20 bg-white/10 text-white placeholder:text-zinc-500 outline-none transition-all focus:border-brand-green/70 focus:ring-2 focus:ring-brand-green/25 focus:bg-white/[0.14]";
 
+  return (
+    <div className="min-h-screen flex flex-col contact-page">
       <div className="relative z-10 flex flex-col flex-grow">
         {/* Header */}
         <Header />
@@ -51,30 +49,30 @@ export default function ContactPage() {
             >
               Get in Touch
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-2xl mx-auto px-4">
+            <p className="text-base sm:text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto px-4">
               Ready to transform your brand? Let&apos;s start a conversation about your project.
             </p>
           </div>
+
+          <TrustSection variant="strip" />
 
           {/* Contact Form and Info Section */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
             {/* Contact Form - Left Side (2 columns) */}
             <div className="lg:col-span-2">
-              <div 
-                className="bg-gradient-to-br from-green-50 to-green-100/50 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-lg"
-              >
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+              <div className="contact-form-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10">
+                <h2 className="font-syne text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2">
                   Send us a Message
                 </h2>
-                <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8">
+                <p className="text-sm sm:text-base text-zinc-400 mb-6 sm:mb-8">
                   Fill out the form below and we&apos;ll get back to you within 24 hours.
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Name Field */}
                   <div>
-                    <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Name <span className="text-red-500">*</span>
+                    <label htmlFor="name" className="contact-form-label block text-sm font-semibold mb-2">
+                      Name <span className="text-red-400">*</span>
                     </label>
                     <input
                       type="text"
@@ -84,14 +82,14 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       placeholder="Your name"
-                      className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all bg-white"
+                      className={fieldClass}
                     />
                   </div>
 
                   {/* Email Field */}
                   <div>
-                    <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Email <span className="text-red-500">*</span>
+                    <label htmlFor="email" className="contact-form-label block text-sm font-semibold mb-2">
+                      Email <span className="text-red-400">*</span>
                     </label>
                     <input
                       type="email"
@@ -101,14 +99,14 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       placeholder="your.email@example.com"
-                      className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all bg-white"
+                      className={fieldClass}
                     />
                   </div>
 
                   {/* Phone Field */}
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Phone <span className="text-gray-400 text-xs">(Optional)</span>
+                    <label htmlFor="phone" className="contact-form-label block text-sm font-semibold mb-2">
+                      Phone <span className="text-zinc-500 text-xs font-normal">(Optional)</span>
                     </label>
                     <input
                       type="tel"
@@ -117,14 +115,14 @@ export default function ContactPage() {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="+1 (234) 567-890"
-                      className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all bg-white"
+                      className={fieldClass}
                     />
                   </div>
 
                   {/* Subject Field */}
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Subject <span className="text-red-500">*</span>
+                    <label htmlFor="subject" className="contact-form-label block text-sm font-semibold mb-2">
+                      Subject <span className="text-red-400">*</span>
                     </label>
                     <input
                       type="text"
@@ -134,14 +132,14 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       placeholder="What is this regarding?"
-                      className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all bg-white"
+                      className={fieldClass}
                     />
                   </div>
 
                   {/* Message Field */}
                   <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Message <span className="text-red-500">*</span>
+                    <label htmlFor="message" className="contact-form-label block text-sm font-semibold mb-2">
+                      Message <span className="text-red-400">*</span>
                     </label>
                     <textarea
                       id="message"
@@ -151,14 +149,14 @@ export default function ContactPage() {
                       required
                       rows={6}
                       placeholder="Tell us about your project..."
-                      className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-all resize-none bg-white"
+                      className={`${fieldClass} resize-none`}
                     />
                   </div>
 
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full bg-green-600 text-white px-6 py-4 rounded-xl font-semibold hover:bg-green-700 transition-all duration-300 hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2"
+                    className="btn-glow w-full justify-center py-4 rounded-xl text-base"
                   >
                     Send Message
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -171,7 +169,7 @@ export default function ContactPage() {
 
             {/* Contact Information - Right Side (1 column) */}
             <div className="lg:col-span-1">
-              <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-lg h-full">
+              <div className="contact-info-panel rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-lg h-full">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 sm:mb-8">
                   Contact Information
                 </h2>
@@ -246,8 +244,8 @@ export default function ContactPage() {
 
           {/* Map Section */}
           <div className="mt-8 sm:mt-12 md:mt-16 max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-lg">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-4 sm:mb-6 text-center">
+            <div className="contact-form-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10">
+              <h2 className="font-syne text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 sm:mb-6 text-center">
                 Find Us on Map
               </h2>
               <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] rounded-xl sm:rounded-2xl overflow-hidden shadow-md">
@@ -263,16 +261,19 @@ export default function ContactPage() {
                 />
               </div>
               <div className="mt-6 text-center">
-                <p className="text-gray-600 mb-2">
-                  <strong>Address:</strong> Kolkata, West Bengal, India
+                <p className="text-zinc-300 mb-2">
+                  <strong className="text-white">Address:</strong> Kolkata, West Bengal, India
                 </p>
-                <p className="text-sm text-gray-500">
-                  Coordinates: 22°36'03.2"N, 88°25'33.0"E
+                <p className="text-sm text-zinc-500">
+                  Coordinates: 22°36&apos;03.2&quot;N, 88°25&apos;33.0&quot;E
                 </p>
               </div>
             </div>
           </div>
         </main>
+
+        <TestimonialSection />
+        <TeamSection />
 
         {/* Footer */}
         <Footer />

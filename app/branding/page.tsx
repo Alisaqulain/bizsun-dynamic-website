@@ -1,4 +1,5 @@
-import Image from "next/image";
+﻿import Image from "next/image";
+import ArrowIcon from "../components/icons/ArrowIcon";
 import Link from "next/link";
 import type { Metadata } from "next";
 import FAQSection from "../faq-section";
@@ -6,6 +7,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 import TeamSection from "../components/TeamSection";
+import TrustSection from "../components/TrustSection";
 
 export const metadata: Metadata = {
   title: "Website & Branding | Design, UI/UX & Brand Identity",
@@ -64,7 +66,7 @@ export default function BrandingPage() {
           </p>
 
           {/* CTA Button */}
-          <Link href="/contact" className="text-white px-6 sm:px-12 md:px-17 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400 inline-block" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="btn-glow btn-glow-lg animate-fadeInUp animation-delay-400">
             Get in Touch
           </Link>
           <p className="pt-2 text-sm sm:text-base text-[#6B6B6B]">No commitments. Just clarity.</p>
@@ -72,19 +74,10 @@ export default function BrandingPage() {
           {/* Trusted By Section */}
         </main>
       </div>
-      <div className="mt-[-30] w-full flex flex-col items-center" style={{
+      <TrustSection variant="strip" />
+      <div className="w-full flex flex-col items-center" style={{
         background: 'linear-gradient(to bottom right, rgba(100, 203, 113, 0.1), rgba(255, 240, 150, 0.2))'
       }}>
-        <Image
-          src="/Container.png"
-          alt="Trusted By Companies"
-          width={1200}
-          height={200}
-          className=" w-full max-w-8xl"
-        />
-
-
-
 
         {/* Digital Marketing Challenges & Solution Section */}
 
@@ -107,27 +100,27 @@ export default function BrandingPage() {
                 </h2>
                 <ul className="space-y-3 sm:space-y-4">
                   <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                    <ArrowIcon className="mt-0.5" />
 
                     <p className="text-base sm:text-lg text-gray-700">Website looks good but doesn't convert visitors?</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <p className="text-lg text-gray-700">Brand feels inconsistent across platforms?</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <p className="text-lg text-gray-700">Users don’t clearly understand what you do?</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <p className="text-lg text-gray-700">Website is slow, outdated, or hard to navigate?</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <p className="text-lg text-gray-700">Struggling to build trust online?</p>
                   </li>
@@ -161,7 +154,7 @@ export default function BrandingPage() {
                   experiences that build trust and guide users toward action.</p>
 
                 {/* CTA Button */}
-          <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="btn-glow animate-fadeInUp animation-delay-400">
           Questions? Talk to us
 
           </Link>
@@ -215,7 +208,7 @@ export default function BrandingPage() {
                 {/* Left: Services List */}
                 <div className="space-y-6">
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <div>
                       <p className="font-semibold text-lg text-black">Website Design & Development</p>
@@ -223,7 +216,7 @@ export default function BrandingPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <div>
                       <p className="font-semibold text-lg text-black">UI / UX Design</p>
@@ -231,7 +224,7 @@ export default function BrandingPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <div>
                       <p className="font-semibold text-lg text-black">Branding & Creative Design</p>
@@ -239,7 +232,7 @@ export default function BrandingPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <div>
                       <p className="font-semibold text-lg text-black">E-commerce Solutions</p>
@@ -247,7 +240,7 @@ export default function BrandingPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <div>
                       <p className="font-semibold text-lg text-black">Landing Page Design</p>
@@ -282,22 +275,22 @@ export default function BrandingPage() {
               </h2>
               <div className="max-w-4xl space-y-4">
                 <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                   <p className="text-lg text-gray-700"><span className="font-semibold text-black">Local businesses</span> looking to grow visibility and leads</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                   <p className="text-lg text-gray-700"><span className="font-semibold text-black">Startups</span> aiming for fast and sustainable growth</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                   <p className="text-lg text-gray-700"><span className="font-semibold text-black">E-commerce brands</span> focused on conversions and sales</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                   <p className="text-lg text-gray-700"><span className="font-semibold text-black">Service-based businesses</span> needing qualified inquiries</p>
                 </div>

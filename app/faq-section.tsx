@@ -60,13 +60,13 @@ function FAQItemComponent({ item }: { item: FAQItem }) {
         <h3 className="font-bold text-gray-800 text-base md:text-lg flex-1">
           {item.question}
         </h3>
-        <div className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center flex-shrink-0">
+        <div className="faq-toggle-icon w-8 h-8 rounded-full border border-brand-green/40 flex items-center justify-center flex-shrink-0 shadow-[0_0_12px_rgba(100,203,113,0.15)]">
           {isOpen ? (
-            <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
             </svg>
           ) : (
-            <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
           )}
@@ -83,12 +83,7 @@ function FAQItemComponent({ item }: { item: FAQItem }) {
 
 export default function FAQSection() {
   return (
-    <section 
-      className="w-full py-20 px-6"
-      style={{
-        background: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.95), rgba(250, 248, 245, 0.9))'
-      }}
-    >
+    <section className="faq-section w-full py-20 px-6 bg-transparent">
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <div className="mb-12">

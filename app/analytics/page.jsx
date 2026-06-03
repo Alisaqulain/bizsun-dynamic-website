@@ -1,10 +1,12 @@
-import Image from "next/image";
+﻿import Image from "next/image";
+import ArrowIcon from "../components/icons/ArrowIcon";
 import Link from "next/link";
 import FAQSection from "../faq-section";
 import TestimonialSection from "@/components/TestimonialSection";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TeamSection from "../components/TeamSection";
+import TrustSection from "../components/TrustSection";
 
 
 export const metadata = {
@@ -68,26 +70,17 @@ export default function AnalyticsPage() {
             We turn your data into actionable insights. From analytics and reporting to conversion optimization and growth strategy, <br /> we help you make informed decisions that drive measurable business growth.          </p>
 
           {/* CTA Button */}
-          <Link href="/contact" className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400 inline-block" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="btn-glow btn-glow-lg animate-fadeInUp animation-delay-400">
             Get in Touch
           </Link>
 
           {/* Trusted By Section */}
         </main>
       </div>
-      <div className="mt-[-30] w-full flex flex-col items-center" style={{
+      <TrustSection variant="strip" />
+      <div className="w-full flex flex-col items-center" style={{
         background: 'linear-gradient(to bottom right, rgba(100, 203, 113, 0.1), rgba(255, 240, 150, 0.2))'
       }}>
-        <Image
-          src="/Container.png"
-          alt="Trusted By Companies"
-          width={1200}
-          height={200}
-          className=" w-full max-w-8xl"
-        />
-
-
-
 
         {/* Digital Marketing Challenges & Solution Section */}
 
@@ -109,22 +102,22 @@ export default function AnalyticsPage() {
                 </h2>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <p className="text-lg text-gray-700">Have data but don't know what it means for your business?</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <p className="text-lg text-gray-700">Website traffic high but conversion rates low?</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <p className="text-lg text-gray-700">Need real-time insights but stuck with outdated reports?</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <p className="text-lg text-gray-700">Looking for growth strategies but unsure where to start?</p>
                   </li>
@@ -157,7 +150,7 @@ export default function AnalyticsPage() {
                 </p>
 
                 {/* CTA Button */}
-                <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+                <Link href="/contact" className="btn-glow animate-fadeInUp animation-delay-400">
                   Questions? Talk to us
 
                 </Link>
@@ -198,7 +191,7 @@ export default function AnalyticsPage() {
                 {/* Left: Services List */}
                 <div className="space-y-6">
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <div>
                       <p className="font-semibold text-lg text-black">Data Analytics & Reporting</p>
@@ -206,7 +199,7 @@ export default function AnalyticsPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <div>
                       <p className="font-semibold text-lg text-black">Conversion Rate Optimization (CRO)</p>
@@ -214,7 +207,7 @@ export default function AnalyticsPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <div>
                       <p className="font-semibold text-lg text-black">Business Intelligence & Dashboards</p>
@@ -222,7 +215,7 @@ export default function AnalyticsPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <div>
                       <p className="font-semibold text-lg text-black">Growth Strategy & Consulting</p>
@@ -266,22 +259,22 @@ export default function AnalyticsPage() {
               </h2>
               <div className="max-w-4xl space-y-4">
                 <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                   <p className="text-lg text-gray-700"><span className="font-semibold text-black">E-commerce businesses</span> needing conversion optimization</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                   <p className="text-lg text-gray-700"><span className="font-semibold text-black">Growing companies</span> requiring data-driven insights</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                   <p className="text-lg text-gray-700"><span className="font-semibold text-black">Organizations</span> needing business intelligence dashboards</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                   <p className="text-lg text-gray-700"><span className="font-semibold text-black">Businesses</span> looking for growth strategy consulting</p>
                 </div>

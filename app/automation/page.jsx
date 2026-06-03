@@ -1,10 +1,12 @@
-import Image from "next/image";
+﻿import Image from "next/image";
+import ArrowIcon from "../components/icons/ArrowIcon";
 import Link from "next/link";
 import FAQSection from "../faq-section";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 import TeamSection from "../components/TeamSection";
+import TrustSection from "../components/TrustSection";
 
 export const metadata = {
   title: "Automation & CRM Solutions | Workflow & Sales",
@@ -67,26 +69,17 @@ Your Business Operations
           We automate your workflows and optimize customer relationships. From CRM implementation to process automation and sales pipeline management, <br /> we help you work smarter, not harder.          </p>
 
           {/* CTA Button */}
-          <Link href="/contact" className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400 inline-block" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="btn-glow btn-glow-lg animate-fadeInUp animation-delay-400">
             Get in Touch
           </Link>
 
           {/* Trusted By Section */}
         </main>
       </div>
-          <div className="mt-[-30] w-full flex flex-col items-center"   style={{
+      <TrustSection variant="strip" />
+          <div className="w-full flex flex-col items-center" style={{
               background: 'linear-gradient(to bottom right, rgba(100, 203, 113, 0.1), rgba(255, 240, 150, 0.2))'
             }}>
-            <Image
-              src="/Container.png"
-              alt="Trusted By Companies"
-              width={1200}
-              height={200}
-              className=" w-full max-w-8xl"
-            />
-         
-
-       
 
           {/* Digital Marketing Challenges & Solution Section */}
           
@@ -108,22 +101,22 @@ Your Business Operations
                   </h2>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Wasting time on repetitive manual tasks?</p>
                     </li>
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Customer data scattered across multiple systems?</p>
                     </li>
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Sales pipeline hard to track and manage?</p>
                     </li>
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Marketing campaigns not automated and optimized?</p>
                     </li>
@@ -155,7 +148,7 @@ Your Business Operations
                     Our automation approach focuses on identifying inefficiencies and streamlining workflows. We implement CRM systems that centralize customer data, automate marketing campaigns, and optimize sales processes. Through careful planning, customization, and integration, we help you reduce manual work, improve customer relationships, and accelerate business growth.
                   </p>
                    {/* CTA Button */}
-          <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="btn-glow animate-fadeInUp animation-delay-400">
           Questions? Talk to us
 
           </Link>
@@ -196,7 +189,7 @@ Your Business Operations
                   {/* Left: Services List */}
                   <div className="space-y-6">
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">CRM Implementation & Customization</p>
@@ -204,7 +197,7 @@ Your Business Operations
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Business Process Automation</p>
@@ -212,7 +205,7 @@ Your Business Operations
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Marketing Automation</p>
@@ -220,7 +213,7 @@ Your Business Operations
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Sales Pipeline Management</p>
@@ -264,22 +257,22 @@ Your Business Operations
                 </h2>
                 <div className="max-w-4xl space-y-4">
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Sales teams</span> needing better pipeline management</p>
                   </div>
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Marketing teams</span> requiring campaign automation</p>
                   </div>
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Growing businesses</span> with manual processes to automate</p>
                   </div>
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Organizations</span> needing CRM implementation</p>
                   </div>

@@ -3,6 +3,9 @@
  */
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.bizsuncreative.com";
 
+/** Keep in sync with `public/robots.txt` (Sitemap line uses SITE_URL at deploy). */
+export const ROBOTS_SITEMAP_URL = `${SITE_URL}/sitemap.xml`;
+
 export const defaultMetadata = {
   siteName: "Bizsun Creative",
   title: "Bizsun Creative | Digital Agency – Software, Marketing, Design & Technology",

@@ -1,10 +1,12 @@
-import Image from "next/image";
+﻿import Image from "next/image";
+import ArrowIcon from "../components/icons/ArrowIcon";
 import Link from "next/link";
 import FAQSection from "../faq-section";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 import TeamSection from "../components/TeamSection";
+import TrustSection from "../components/TrustSection";
 
 export const metadata = {
   title: "Digital Marketing | SEO, Social Media & Content",
@@ -67,26 +69,17 @@ Real Business Growth
           We don’t just run campaigns — we build data-driven strategies that attract the right audience, generate <br /> qualified leads, and turn attention into revenue.          </p>
 
           {/* CTA Button */}
-          <Link href="/contact" className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400 inline-block" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="btn-glow btn-glow-lg animate-fadeInUp animation-delay-400">
             Get in Touch
           </Link>
 
           {/* Trusted By Section */}
         </main>
       </div>
-          <div className="mt-[-30] w-full flex flex-col items-center"   style={{
+      <TrustSection variant="strip" />
+          <div className="w-full flex flex-col items-center" style={{
               background: 'linear-gradient(to bottom right, rgba(100, 203, 113, 0.1), rgba(255, 240, 150, 0.2))'
             }}>
-            <Image
-              src="/Container.png"
-              alt="Trusted By Companies"
-              width={1200}
-              height={200}
-              className=" w-full max-w-8xl"
-            />
-         
-
-       
 
           {/* Digital Marketing Challenges & Solution Section */}
           
@@ -108,22 +101,22 @@ Real Business Growth
                   </h2>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Spending money on ads but not getting quality leads?</p>
                     </li>
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Social media engagement high, but sales low?</p>
                     </li>
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">Getting website traffic, but no conversions?</p>
                     </li>
                     <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <p className="text-lg text-gray-700">No clear strategy, sirf random marketing activities?</p>
                     </li>
@@ -155,7 +148,7 @@ Real Business Growth
                     Our approach to digital marketing is driven by strategy, data, and clarity. We begin by understanding your business goals and audience, then create custom marketing strategies designed for real impact. Through continuous optimization and transparent execution, we focus on generating meaningful engagement, quality leads, and sustainable growth—ensuring every effort contributes to measurable business outcomes.
                   </p>
                   {/* CTA Button */}
-          <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="btn-glow animate-fadeInUp animation-delay-400">
           Questions? Talk to us
 
           </Link>
@@ -196,7 +189,7 @@ Real Business Growth
                   {/* Left: Services List */}
                   <div className="space-y-6">
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Search Engine Optimization (SEO)</p>
@@ -204,7 +197,7 @@ Real Business Growth
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Social Media Marketing (SMM)</p>
@@ -212,7 +205,7 @@ Real Business Growth
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Pay-Per-Click Advertising (PPC)</p>
@@ -220,7 +213,7 @@ Real Business Growth
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Content Marketing</p>
@@ -228,7 +221,7 @@ Real Business Growth
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Email Marketing & Automation</p>
@@ -236,7 +229,7 @@ Real Business Growth
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                       <div>
                         <p className="font-semibold text-lg text-black">Influencer Marketing</p>
@@ -280,22 +273,22 @@ Real Business Growth
                 </h2>
                 <div className="max-w-4xl space-y-4">
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Local businesses</span> looking to grow visibility and leads</p>
                   </div>
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Startups</span> aiming for fast and sustainable growth</p>
                   </div>
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">E-commerce brands</span> focused on conversions and sales</p>
                   </div>
                   <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                     <p className="text-lg text-gray-700"><span className="font-semibold text-black">Service-based businesses</span> needing qualified inquiries</p>
                   </div>

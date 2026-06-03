@@ -1,7 +1,12 @@
-import Image from "next/image";
+﻿import Image from "next/image";
+import ArrowIcon from "../components/icons/ArrowIcon";
 import Link from "next/link";
 import FAQSection from "../faq-section";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
+import TrustSection from "../components/TrustSection";
+import TeamSection from "../components/TeamSection";
 
 export default function Home() {
   return (
@@ -23,51 +28,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative z-10" style={{
-        background: 'linear-gradient(to bottom, rgba(100, 203, 113, 0.3), rgba(100, 203, 113, 0.5))',
-      }}>
-        {/* Header */}
-        <header className="container mx-auto px-6 py-6 flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center gap-3">
-            <Image
-              src="/logo.png"
-              alt="Bizsun Creative Logo"
-              width={150}
-              height={50}
-            // className="object-contain"
-            />
-
-          </div>
-
-          {/* Navigation */}
-          <nav className="hidden md:flex items-center gap-6 bg-white/40 p-2 rounded-2xl text-black border-white border-1 shadow-lg backdrop-blur-sm">
-            <Link href="/" className="px-4 py-2 text-gray-400 hover:text-gray-500 font-medium transition-all duration-300 hover:scale-105">
-              Home
-            </Link>
-            <a href="#services" className="px-4 py-2 text-gray-400 hover:text-gray-500 font-medium transition-all duration-300 hover:scale-105 cursor-pointer">
-              Services
-            </a>
-            <Link href="/about-us" className="px-4 py-2 text-gray-400 hover:text-gray-500 font-medium transition-all duration-300 hover:scale-105">
-              About
-            </Link>
-            <Link href="/portfolio" className="px-4 py-2 text-gray-400 hover:text-gray-500 font-medium transition-all duration-300 hover:scale-105">
-              Portfolio
-            </Link>
-            <Link href="/contact" className="px-4 py-2 text-gray-400 hover:text-gray-500 font-medium transition-all duration-300 hover:scale-105">
-              Contact us
-            </Link>
-            <Link href="/career" className="px-4 py-2 text-gray-400 hover:text-gray-500 font-medium transition-all duration-300 hover:scale-105">
-              Career
-            </Link>
-          </nav>
-
-          {/* CTA Button */}
-          <button className="bg-green-600 text-white px-6 py-3 rounded-full font-medium hover:bg-green-700 transition-all duration-300 flex items-center gap-2 hover:scale-105 hover:shadow-lg">
-            Let&apos;s Collaborate
-            <img src="/Background.png" alt="" />
-          </button>
-        </header>
+      <div className="relative z-10">
+        <Header />
 
         {/* Hero Section */}
         <main className="container mx-auto px-6 py-20 flex flex-col items-center text-center relative min-h-[80vh]">
@@ -93,26 +55,17 @@ export default function Home() {
           <p className="text-base md:text-lg text-[#6B6B6B] max-w-4xl mb-12 leading-relaxed animate-fadeInUp animation-delay-300">
             We build scalable, secure, and high-performance web and mobile applications that help businesses grow faster and smarter. From intuitive mobile apps to robust web platforms and custom backend systems, our development solutions are designed to deliver speed, stability, and seamless user experiences. At Bizsun Creative, we don’t just develop products — we create digital systems that support long-term business success.  </p>
           {/* CTA Button */}
-          <Link href="/contact" className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400 inline-block" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="btn-glow btn-glow-lg animate-fadeInUp animation-delay-400">
             Get in Touch
           </Link>
 
           {/* Trusted By Section */}
         </main>
       </div>
-      <div className="mt-[-30] w-full flex flex-col items-center" style={{
+      <TrustSection variant="strip" />
+      <div className="w-full flex flex-col items-center" style={{
         background: 'linear-gradient(to bottom right, rgba(100, 203, 113, 0.1), rgba(255, 240, 150, 0.2))'
       }}>
-        <Image
-          src="/Container.png"
-          alt="Trusted By Companies"
-          width={1200}
-          height={200}
-          className=" w-full max-w-8xl"
-        />
-
-
-
 
         {/* Digital Marketing Challenges & Solution Section */}
 
@@ -133,22 +86,22 @@ export default function Home() {
                   Is Your App or Website Limiting Your Business Growth?                  </h2>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <p className="text-lg text-gray-700">Spending money on ads but not getting quality leads?</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <p className="text-lg text-gray-700">Social media engagement high, but sales low?</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <p className="text-lg text-gray-700">Getting website traffic, but no conversions?</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <p className="text-lg text-gray-700">No clear strategy, sirf random marketing activities?</p>
                   </li>
@@ -178,7 +131,7 @@ export default function Home() {
                 <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                   Our development team focuses on building future-ready digital products that are fast, scalable, and aligned with your business goals. Whether you need a mobile app, web application, or backend system, we design and develop solutions that grow with your business.                  </p>
                 {/* CTA Button */}
-                <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+                <Link href="/contact" className="btn-glow animate-fadeInUp animation-delay-400">
                   Questions? Talk to us
 
                 </Link>
@@ -228,7 +181,7 @@ export default function Home() {
                 {/* Left: Services List */}
                 <div className="space-y-6">
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
 
                     <div>
@@ -237,7 +190,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <div>
                       <p className="font-semibold text-lg text-black">Social Media Marketing (SMM)</p>
@@ -245,7 +198,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <div>
                       <p className="font-semibold text-lg text-black">Pay-Per-Click Advertising (PPC)</p>
@@ -253,7 +206,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <div>
                       <p className="font-semibold text-lg text-black">Content Marketing</p>
@@ -261,7 +214,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <div>
                       <p className="font-semibold text-lg text-black">Email Marketing & Automation</p>
@@ -269,7 +222,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <ArrowIcon />
 
                     <div>
                       <p className="font-semibold text-lg text-black">Influencer Marketing</p>
@@ -313,22 +266,22 @@ export default function Home() {
               </h2>
               <div className="max-w-4xl space-y-4">
                 <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                   <p className="text-lg text-gray-700"><span className="font-semibold text-black">Local businesses</span> looking to grow visibility and leads</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                   <p className="text-lg text-gray-700"><span className="font-semibold text-black">Startups</span> aiming for fast and sustainable growth</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                   <p className="text-lg text-gray-700"><span className="font-semibold text-black">E-commerce brands</span> focused on conversions and sales</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <img src="/YERROW.png" alt="" />
+                  <ArrowIcon />
 
                   <p className="text-lg text-gray-700"><span className="font-semibold text-black">Service-based businesses</span> needing qualified inquiries</p>
                 </div>
@@ -447,93 +400,7 @@ export default function Home() {
 
 
         <TestimonialSection />
-
-        {/* Team Section */}
-        <section
-          className="w-full py-20 px-6"
-          style={{
-            background: 'linear-gradient(to bottom right, rgba(100, 203, 113, 0.1), rgba(255, 240, 150, 0.2))'
-          }}
-        >
-          {/* Meet the Team Section */}
-          <div className="">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 text-center mb-14">
-              Meet the creative minds <br />
-              behind <span className="italic font-normal">our success</span>
-            </h2>
-
-            {/* Profile Cards Slider */}
-            <div className="overflow-hidden mb-10 px-4 relative">
-              <style dangerouslySetInnerHTML={{
-                __html: `
-      @keyframes scroll-right-to-left {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(calc(-100% / 2));
-        }
-      }
-      .slider-infinite {
-        animation: scroll-right-to-left 25s linear infinite;
-      }
-      .slider-infinite:hover {
-        animation-play-state: paused;
-      }
-    `}} />
-              <div className="flex slider-infinite">
-                {[
-                  { name: "Shreya Gupta", role: "Graphic Designer", image: "/WhatsApp Image 2026-01-17 at 10.52.06 AM.jpeg" },
-                  { name: "Praful Kumar", role: "A Video Editor and Graphic Designer", image: "/WhatsApp Image 2026-01-16 at 1.55.21 PM.jpeg" },
-                  { name: "Syed Ali Zaddi", role: "Web & App Developer", image: "/WhatsApp Image 2026-01-16 at 1.56.10 PM.jpeg" }
-                ].concat([
-                  { name: "Anas Ansari", role: "Web & App Developer <br />  SEO Expert", image: "/IMG-20241207-WA0010.jpg" },
-                  { name: "Priyanka Chopra", role: "Social Media Specialist", image: "/WhatsApp Image 2026-01-16 at 1.55.21 PM.jpeg" },
-                  { name: "Priyanka Chopra", role: "UI / UX Designer", image: "/WhatsApp Image 2026-01-16 at 1.56.10 PM.jpeg" }
-                ]).map((member, index) => (
-                  <div
-                    key={index}
-                    className="flex-shrink-0 w-[90vw] sm:w-[400px] md:w-[350px] px-4"
-                  >
-                    <div
-                      className="rounded-3xl p-2 shadow-md bg-yellow-300 hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-2"
-                      style={{ border: '1px solid #DFF2E1' }}
-                    >
-                      <div className="relative w-full h-92 rounded-2xl overflow-hidden bg-yellow-300">
-                        <Image
-                          src={member.image}
-                          alt={member.name}
-                          fill
-                          className="object-cover"
-                        />
-                        <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-[85%] bg-[#DFF2E1] rounded-b-3xl rounded-t-3xl px-2 py-2 text-center">
-                          <h3 className="text-lg font-bold text-gray-900">
-                            {member.name}
-                          </h3>
-                          <p className="text-sm text-gray-700" dangerouslySetInnerHTML={{ __html: member.role }}></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            {/* Let's Collaborate Section */}
-            <div className="text-center">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                Let&apos;s shape the future of your <span className="italic font-serif">brand</span>
-              </h2>
-              <p className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
-                From strategy to execution, we help brands grow with clarity, consistency, and thoughtfully crafted digital solutions.
-              </p>
-              {/* CTA Button */}
-              <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
-                Let&apos;s Collaborate
-                <img src="/Background (1).png" alt="" className="inline ml-3 mb-1" />
-              </Link>
-            </div>
-          </div>
-        </section>
+        <TeamSection />
       </div>
 
 
@@ -541,81 +408,7 @@ export default function Home() {
       {/* FAQ Section */}
       <FAQSection />
 
-      {/* Footer */}
-      <footer className="bg-gray-800 text-gray-300 py-16 px-6">
-        <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-            {/* Left Section - Call to Action */}
-            <div className="md:col-span-1">
-              <p className="text-xs uppercase tracking-wider text-gray-400 mb-4">
-                LET&apos;S TURN IDEAS INTO IMPACT
-              </p>
-              <div className="mb-6">
-                <div className="flex items-center gap-3 mb-2">
-                  <h2 className="text-4xl md:text-5xl font-bold text-white">LET&apos;S</h2>
-                  <button className="w-12 h-12 rounded-lg bg-green-600 flex items-center justify-center hover:bg-green-700 transition-colors flex-shrink-0">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M7 7h10v10" />
-                    </svg>
-                  </button>
-                </div>
-                <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">WORK TOGETHER</h2>
-                <button className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center gap-3">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                  </svg>
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-                  </svg>
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            {/* Navigation Columns */}
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-gray-400 mb-4">HOME</h3>
-              <ul className="space-y-2">
-                <li><Link href="/" className="text-gray-300 hover:text-white transition-colors">HOME</Link></li>
-                <li><Link href="/about-us" className="text-gray-300 hover:text-white transition-colors">ABOUT</Link></li>
-                <li><Link href="/portfolio" className="text-gray-300 hover:text-white transition-colors">PORTFOLIO</Link></li>
-                <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">SERVICE</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-gray-400 mb-4">CLIENTS</h3>
-              <ul className="space-y-2">
-                <li><Link href="/clients" className="text-gray-300 hover:text-white transition-colors">CLIENTS</Link></li>
-                <li><Link href="/contact" className="text-gray-300 hover:text-white transition-colors">CONTACTS</Link></li>
-                <li><Link href="/gallery" className="text-gray-300 hover:text-white transition-colors">GALLERY</Link></li>
-                <li><Link href="/clients" className="text-gray-300 hover:text-white transition-colors">CLIENTS</Link></li>
-                <li><Link href="/news" className="text-gray-300 hover:text-white transition-colors">NEWS</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-gray-400 mb-4">PORTFOLIO</h3>
-              <ul className="space-y-2">
-                <li><Link href="/services/digital-marketing" className="text-gray-300 hover:text-white transition-colors">DIGITAL MARKETING SERVICES</Link></li>
-                <li><Link href="/services/website-branding" className="text-gray-300 hover:text-white transition-colors">WEBSITE, APP & BRANDING SERVICES</Link></li>
-                <li><Link href="/services/app-development" className="text-gray-300 hover:text-white transition-colors">MOBILE & WEB APP DEVELOPMENT</Link></li>
-                <li><Link href="/services/analytics" className="text-gray-300 hover:text-white transition-colors">ANALYTICS & GROWTH SOLUTIONS</Link></li>
-                <li><Link href="/services/automation" className="text-gray-300 hover:text-white transition-colors">AUTOMATION & CRM SOLUTIONS</Link></li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Copyright */}
-          <div className="border-t border-gray-700 pt-8 text-center">
-            <p className="text-xs text-gray-400">
-              ©2026 Bizsun. All rights reserved. <Link href="/terms" className="hover:text-white transition-colors">Terms & Conditions</Link> | <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

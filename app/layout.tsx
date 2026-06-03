@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Syne, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import { SITE_URL, defaultMetadata } from "@/lib/seo";
+import SiteLayout from "./components/layout/SiteLayout";
 
 export function generateViewport() {
-  return { themeColor: "#64CB71" };
+  return { themeColor: "#050505" };
 }
 
 const geistSans = Geist({
@@ -119,9 +120,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${syne.variable} ${instrumentSerif.variable} antialiased`}
+        suppressHydrationWarning
       >
         <script
           type="application/ld+json"
@@ -135,7 +137,7 @@ export default function RootLayout({
             __html: JSON.stringify(jsonLdWebSite),
           }}
         />
-        {children}
+        <SiteLayout>{children}</SiteLayout>
       </body>
     </html>
   );

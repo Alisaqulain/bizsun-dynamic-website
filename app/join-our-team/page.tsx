@@ -5,6 +5,10 @@ import { useRouter } from "next/navigation";
 import FAQSection from "../faq-section";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import TrustSection from "../components/TrustSection";
+import TestimonialSection from "@/components/TestimonialSection";
+import TeamSection from "../components/TeamSection";
+import RecruitmentTimeline from "../components/join-team/RecruitmentTimeline";
 import { useState } from "react";
 
 
@@ -87,7 +91,7 @@ export default function JoinOurTeam() {
 
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="join-team-page min-h-screen relative overflow-hidden">
       {/* Background + pattern */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 opacity-10">
@@ -119,14 +123,14 @@ export default function JoinOurTeam() {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FF9000] mb-3 sm:mb-4 leading-tight">
                 Join Our Team
               </h1>
-              <p className="text-sm sm:text-base md:text-lg text-[#1F2933] leading-relaxed mb-4 sm:mb-6">
+              <p className="join-team-desc text-sm sm:text-base md:text-lg text-white leading-relaxed mb-4 sm:mb-6">
                 At Bizsun Creative, we believe careers are built through
                 meaningful work, continuous learning, and strong collaboration.
                 We&apos;re a team of designers, marketers, developers, and
                 strategists working together to solve real business challenges
                 through creativity and technology.
               </p>
-              <p className="text-sm sm:text-base md:text-lg text-[#1F2933] leading-relaxed mb-6 sm:mb-8">
+              <p className="join-team-desc text-sm sm:text-base md:text-lg text-white leading-relaxed mb-6 sm:mb-8">
                 Here, your ideas matter, your skills are nurtured, and your
                 growth is supported at every stage. Whether you&apos;re
                 starting your journey or looking to take the next step in your
@@ -134,14 +138,7 @@ export default function JoinOurTeam() {
                 learn, contribute, and grow while creating impactful work that
                 truly makes a difference.
               </p>
-              <Link
-                href="#open-roles"
-                className="inline-flex items-center justify-center px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-sm md:text-base font-semibold text-white shadow-lg hover:opacity-90 hover:scale-105 transition-transform"
-                style={{
-                  background:
-                    "linear-gradient(to right, #64CB71, #418F40)",
-                }}
-              >
+              <Link href="#open-roles" className="btn-glow">
                 Open Positions
               </Link>
             </div>
@@ -161,6 +158,8 @@ export default function JoinOurTeam() {
         </main>
       </div>
 
+      <TrustSection variant="strip" />
+
       <div
         className="w-full flex flex-col gap-24 overflow-hidden"
         style={{
@@ -171,7 +170,7 @@ export default function JoinOurTeam() {
         {/* Section 1 */}
         <section className="container mx-auto max-w-6xl px-4 sm:px-6 py-12 sm:py-20 md:py-28">
           <div className="max-w-[1360px] mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#181818] mb-6 sm:mb-10 px-4">
+            <h2 className="join-team-subhead text-2xl sm:text-3xl md:text-4xl font-bold text-center text-white mb-6 sm:mb-10 px-4">
               What makes Bizsun a great place to work?
             </h2>
 
@@ -186,7 +185,7 @@ export default function JoinOurTeam() {
               {values.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-3xl bg-white shadow-md p-4 sm:p-6 border border-[#E5F3E7]
+                  className="join-team-card-light rounded-3xl bg-white shadow-md p-4 sm:p-6 border border-[#E5F3E7]
                   flex flex-col items-center w-full max-w-[200px] mx-auto"
                 >
                   <div className="w-full mb-3">
@@ -211,10 +210,10 @@ export default function JoinOurTeam() {
               ))}
             </div>
             <div className="text-center mt-12 sm:mt-24 mb-8 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#181818] mb-2 px-4">
+            <h2 className="join-team-subhead text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 px-4">
               Don&apos;t just take our word for it!
             </h2>
-            <p className="text-sm md:text-base text-gray-600 px-4">
+            <p className="join-team-desc text-sm md:text-base text-white px-4">
               See the feedback from your teammates.
             </p>
           </div>
@@ -224,7 +223,7 @@ export default function JoinOurTeam() {
                 background: "linear-gradient(to right, #ffffff 0%, rgba(255, 255, 240, 0.5) 50%, rgba(255, 240, 150, 0.3) 100%)"
               }}
             >
-              <div className="w-full max-w-[1374px] mx-auto rounded-[18px] bg-white shadow-lg p-4 sm:p-6 md:p-8 lg:p-12 min-h-[400px] md:min-h-[600px] flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 md:gap-12">
+              <div className="join-team-card-light w-full max-w-[1374px] mx-auto rounded-[18px] bg-white shadow-lg p-4 sm:p-6 md:p-8 lg:p-12 min-h-[400px] md:min-h-[600px] flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 md:gap-12">
                 {/* Left – Testimonial Card */}
                 <div className="flex-1 flex flex-col md:flex-row items-start gap-4 sm:gap-6 md:gap-8 w-full md:w-auto">
                   {/* Person Image */}
@@ -322,35 +321,24 @@ export default function JoinOurTeam() {
         {/* Recruitment Process Section */}
         <section className="container mx-auto max-w-6xl px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#181818] mb-3 sm:mb-4 text-center px-4">
+            <h2 className="join-team-subhead text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 text-center px-4">
               How to Become a Part of Bizsun Creative?
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 text-center mb-8 sm:mb-12 px-4">
+            <p className="join-team-desc text-sm sm:text-base md:text-lg text-white text-center mb-8 sm:mb-12 px-4">
               Joining Bizsun Creative is simple and transparent. Follow the steps below <br className="hidden sm:block" /> to begin your journey with us.
             </p>
 
-            <div className="relative overflow-hidden">
-              {/* Timeline Line */}
-              <img
-                src="/image.png"
-                alt="Recruitment Process Timeline"
-                className="w-full h-auto object-contain"
-                style={{
-                  WebkitMaskImage: "radial-gradient(circle, black 60%, transparent 100%)",
-                  maskImage: "radial-gradient(circle, black 60%, transparent 100%)"
-                }}
-              />
-            </div>
+            <RecruitmentTimeline />
           </div>
         </section>
 
         {/* Positions Section */}
         <section id="open-roles" className="container mx-auto max-w-6xl px-4 sm:px-6 py-12 sm:py-20 md:pb-28">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#181818] mb-3 sm:mb-4 text-center px-4">
+            <h2 className="join-team-subhead text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 text-center px-4">
               Positions We&apos;re Always Looking For
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 text-center mb-8 sm:mb-12 px-4">
+            <p className="join-team-desc text-sm sm:text-base md:text-lg text-white text-center mb-8 sm:mb-12 px-4">
               We&apos;re constantly on the lookout for creative, curious, and driven people who want to grow with us.
             </p>
 
@@ -405,14 +393,14 @@ export default function JoinOurTeam() {
 
             {/* Call to Action */}
             <div className="text-center mb-6 sm:mb-8 px-4">
-              <p className="text-sm sm:text-base md:text-lg text-gray-600">
+              <p className="join-team-desc text-sm sm:text-base md:text-lg text-white">
                 Don&apos;t see a role that fits? Send us your portfolio anyway.
               </p>
             </div>
 
             {/* Apply Now Button */}
             <div className="text-center px-4">
-            <Link href="/contact" className="text-white px-6 sm:px-12 md:px-17 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400 inline-block" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+            <Link href="/contact" className="btn-glow animate-fadeInUp animation-delay-400">
             Apply Now
           </Link>
             </div>
@@ -420,6 +408,9 @@ export default function JoinOurTeam() {
         </section>
        
       </div>
+
+      <TestimonialSection />
+      <TeamSection />
 
       {/* FAQ section reused */}
       <FAQSection />

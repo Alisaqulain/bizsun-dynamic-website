@@ -1,7 +1,11 @@
 import Image from "next/image";
+import { ButtonArrowIcon } from "../components/icons/ArrowIcon";
 import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import TrustSection from "../components/TrustSection";
+import TestimonialSection from "@/components/TestimonialSection";
+import TeamSection from "../components/TeamSection";
 
 export const metadata = {
   title: "About Us | Digital Agency – Our Story & Team",
@@ -55,6 +59,8 @@ export default function AboutUsPage() {
           </section>
         </main>
       </div>
+
+      <TrustSection variant="strip" />
 
       {/* Meet the Founder Section */}
       <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
@@ -113,15 +119,18 @@ export default function AboutUsPage() {
         </p>
       </section>
 
+      <TestimonialSection />
+      <TeamSection />
+
       {/* Let's Build Something Impactful Together Section */}
       <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">Let&apos;s Build Something Impactful Together</h2>
         <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-4xl mx-auto mb-6 sm:mb-8 leading-relaxed">
           Whether you&apos;re a startup or an established brand, we&apos;re here to help you grow with clarity, creativity, and confidence.
         </p>
-        <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+        <Link href="/contact" className="btn-glow animate-fadeInUp animation-delay-400">
           Let&apos;s Collaborate
-           <img src="/Background (1).png" alt="" className="inline ml-3 mb-1" />
+           <ButtonArrowIcon className="inline ml-3 mb-1 w-4 h-4" />
           </Link>
       </section>
 
