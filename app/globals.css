@@ -993,3 +993,70 @@ body {
 .animation-delay-300 { animation-delay: 300ms; }
 .animation-delay-400 { animation-delay: 400ms; }
 .animation-delay-500 { animation-delay: 500ms; }
+
+/* Legal pages (Privacy Policy, etc.) */
+.legal-page .legal-content h2 {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--brand-green);
+  margin-bottom: 0.75rem;
+}
+
+.legal-page .legal-content h3 {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.legal-page .legal-content p,
+.legal-page .legal-content li {
+  color: rgb(161 161 170);
+  line-height: 1.75;
+  font-size: 0.9375rem;
+}
+
+.legal-page .legal-content ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-page .legal-content ul li {
+  margin-bottom: 0.35rem;
+}
+
+.legal-page .legal-content strong {
+  color: #e4e4e7;
+  font-weight: 600;
+}
+
+.legal-page .legal-lead {
+  color: rgb(212 212 216) !important;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.legal-page .legal-link {
+  color: var(--brand-green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.legal-page .legal-link:hover {
+  color: #ffffff;
+}
+
+.bizsun-site .legal-page .contact-form-card {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(100, 203, 113, 0.28) !important;
+  backdrop-filter: blur(16px);
+  box-shadow:
+    0 8px 40px rgba(0, 0, 0, 0.45),
+    0 0 60px rgba(100, 203, 113, 0.06) !important;
+}

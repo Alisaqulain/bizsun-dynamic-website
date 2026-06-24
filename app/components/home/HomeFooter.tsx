@@ -148,9 +148,17 @@ export default function HomeFooter() {
 
           {/* Bottom bar */}
           <div className="border-t border-white/10 w-full px-6 sm:px-10 lg:px-16 xl:px-20 py-6 flex flex-col sm:flex-row items-center justify-between gap-5 bg-black/20">
-            <p className="text-xs text-zinc-600 order-2 sm:order-1">
-              © {new Date().getFullYear()} Bizsun Creative. All rights reserved.
-            </p>
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 order-2 sm:order-1">
+              <p className="text-xs text-zinc-600">
+                © {new Date().getFullYear()} Bizsun Creative. All rights reserved.
+              </p>
+              <Link
+                href="/privacy-policy"
+                className="text-xs text-zinc-500 hover:text-brand-green transition-colors"
+              >
+                Privacy Policy
+              </Link>
+            </div>
 
             <div className="flex items-center gap-2 order-1 sm:order-2">
               {socials.map((s) => (
