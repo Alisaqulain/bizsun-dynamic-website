@@ -31,7 +31,7 @@ export default function HeroSection() {
 
           <Reveal delay={0.45}>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/contact" className="btn-glow">Get in Touch</Link>
+              <Link href="/get-started" className="btn-glow">Get in Touch</Link>
               <Link href="/#services" className="btn-outline">View Our Services</Link>
             </div>
           </Reveal>

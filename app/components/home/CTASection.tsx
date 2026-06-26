@@ -19,7 +19,7 @@ export default function CTASection() {
               We&apos;ll understand your goals, recommend the right services, and outline the next steps clearly.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact" className="btn-glow text-base px-10 py-4">Let&apos;s Collaborate</Link>
+              <Link href="/get-started" className="btn-glow text-base px-10 py-4">Let&apos;s Collaborate</Link>
               <Link href="/about-us" className="btn-outline">Learn About Us</Link>
             </div>
           </GlowCard>

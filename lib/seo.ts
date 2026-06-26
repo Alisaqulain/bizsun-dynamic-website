@@ -44,4 +44,5 @@ export const routes = [
   { path: "/industry-focused", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/join-our-team", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/privacy-policy", priority: 0.5, changeFrequency: "yearly" as const },
+  { path: "/get-started", priority: 0.85, changeFrequency: "monthly" as const },
 ];
