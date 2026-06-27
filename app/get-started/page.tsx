@@ -70,7 +70,7 @@ export default function GetStartedPage() {
               <p className="text-zinc-400 text-base sm:text-lg leading-relaxed mb-8 max-w-lg">
                 Share a few details and connect directly with{" "}
                 <strong className="text-white font-medium">Abhinav</strong>, founder of Bizsun
-                Creative — IIT Madras alumnus and strategic lead for every project.
+                Creative — IIT Madras Alumni and strategic lead for every project.
               </p>
 
               <ul className="space-y-3 mb-8">
