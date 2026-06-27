@@ -87,8 +87,8 @@ export default function HomeFooter() {
                     info@bizsoncreative.com
                   </a>
                   <div className="mt-auto flex flex-wrap gap-3">
-                    <Link href="/contact" className="btn-glow text-sm">
-                      Contact Us
+                    <Link href="/get-started" className="btn-glow text-sm">
+                      Get Started
                     </Link>
                     <a
                       href="/Bizson Creative Production2.pptx"

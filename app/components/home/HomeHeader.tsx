@@ -84,7 +84,7 @@ export default function HomeHeader() {
           </nav>
 
           <Link
-            href="/contact"
+            href="/get-started"
             className="header-desktop-cta btn-glow hidden items-center gap-2 text-sm font-medium lg:inline-flex"
           >
             Let&apos;s Collaborate
@@ -173,7 +173,7 @@ export default function HomeHeader() {
                 exit={{ opacity: 0, y: 8 }}
                 transition={{ delay: 0.04 * mobileLinks.length }}
               >
-                <Link href="/contact" onClick={() => setOpen(false)} className="btn-glow mt-2">
+                <Link href="/get-started" onClick={() => setOpen(false)} className="btn-glow mt-2">
                   Let&apos;s Collaborate
                 </Link>
               </motion.div>

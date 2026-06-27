@@ -112,7 +112,7 @@ export default function HomeTeamSection() {
               consistency, and thoughtfully crafted digital solutions.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact" className="btn-glow">Let&apos;s Collaborate</Link>
+              <Link href="/get-started" className="btn-glow">Let&apos;s Collaborate</Link>
               <Link href="/join-our-team" className="btn-outline">Join Our Team</Link>
             </div>
           </GlowCard>
