@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import { getLeadWhatsAppUrl, leadServiceOptions, type LeadFormData } from "@/lib/leads";
 import { trackMetaLead } from "@/lib/meta-pixel";
@@ -17,6 +17,7 @@ export default function LandingLeadForm() {
   const [form, setForm] = useState<LeadFormData>(initialForm);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
+  const leadTrackedRef = useRef(false);
 
   const fieldClass =
     "w-full px-4 py-3.5 rounded-xl border border-white/20 bg-white/10 text-white placeholder:text-zinc-500 outline-none transition-all focus:border-brand-green/70 focus:ring-2 focus:ring-brand-green/25 focus:bg-white/[0.14]";
@@ -43,7 +44,13 @@ export default function LandingLeadForm() {
     }
 
     const url = getLeadWhatsAppUrl(form);
-    trackMetaLead();
+
+    // Meta Pixel Lead — only once per successful submission, before WhatsApp redirect
+    if (!leadTrackedRef.current) {
+      trackMetaLead();
+      leadTrackedRef.current = true;
+    }
+
     window.open(url, "_blank", "noopener,noreferrer");
     setSubmitted(true);
   };
@@ -75,6 +82,7 @@ export default function LandingLeadForm() {
           onClick={() => {
             setForm(initialForm);
             setSubmitted(false);
+            leadTrackedRef.current = false;
           }}
           className="mt-4 block w-full text-sm text-zinc-500 hover:text-brand-green transition-colors"
         >
