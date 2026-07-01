@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import Link from "next/link";
 import { getLeadWhatsAppUrl, leadServiceOptions, type LeadFormData } from "@/lib/leads";
-import { trackMetaLead } from "@/lib/meta-pixel";
+import { openWhatsAppAfterLead } from "@/lib/meta-pixel";
 
 const initialForm: LeadFormData = {
   name: "",
@@ -45,13 +45,16 @@ export default function LandingLeadForm() {
 
     const url = getLeadWhatsAppUrl(form);
 
-    // Meta Pixel Lead — only once per successful submission, before WhatsApp redirect
     if (!leadTrackedRef.current) {
-      trackMetaLead();
+      // 1. Open blank tab (keeps user-gesture for popup)
+      // 2. fbq('track', 'Lead') fires here — see lib/meta-pixel.ts
+      // 3. WhatsApp URL loads after 300ms so Lead beacon can send
+      openWhatsAppAfterLead(url);
       leadTrackedRef.current = true;
+    } else {
+      window.open(url, "_blank", "noopener,noreferrer");
     }
 
-    window.open(url, "_blank", "noopener,noreferrer");
     setSubmitted(true);
   };
 
