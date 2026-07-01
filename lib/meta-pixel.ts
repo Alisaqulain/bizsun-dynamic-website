@@ -4,18 +4,27 @@ declare global {
   }
 }
 
-export function trackMetaLead() {
-  if (typeof window !== "undefined" && typeof window.fbq === "function") {
-    window.fbq("track", "Lead");
-  }
-}
+/** Fires `fbq('track', 'Lead')` — retries briefly if the pixel script is still loading. */
+export function trackMetaLead(): void {
+  if (typeof window === "undefined") return;
 
-export function trackMetaEvent(event: string, params?: Record<string, unknown>) {
-  if (typeof window !== "undefined" && typeof window.fbq === "function") {
-    if (params) {
-      window.fbq("track", event, params);
-    } else {
-      window.fbq("track", event);
-    }
+  const fire = () => {
+    window.fbq?.("track", "Lead");
+  };
+
+  if (typeof window.fbq === "function") {
+    fire();
+    return;
   }
+
+  let attempts = 0;
+  const interval = window.setInterval(() => {
+    attempts += 1;
+    if (typeof window.fbq === "function") {
+      fire();
+      window.clearInterval(interval);
+    } else if (attempts >= 20) {
+      window.clearInterval(interval);
+    }
+  }, 100);
 }
