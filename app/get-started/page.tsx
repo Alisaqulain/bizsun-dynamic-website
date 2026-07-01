@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import LandingLeadForm from "../components/landing/LandingLeadForm";
 import TrustSection from "../components/TrustSection";
+import MetaPixel from "../components/analytics/MetaPixel";
 
 export const metadata: Metadata = {
   title: "Get Started — Free Consultation",
@@ -31,6 +32,7 @@ const highlights = [
 export default function GetStartedPage() {
   return (
     <div className="landing-page min-h-screen relative overflow-x-hidden">
+      <MetaPixel />
       <header className="site-header fixed inset-x-0 top-0 z-[100]">
         <div className="mx-auto flex h-[4.25rem] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="/" className="shrink-0">

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { getLeadWhatsAppUrl, leadServiceOptions, type LeadFormData } from "@/lib/leads";
+import { trackMetaLead } from "@/lib/meta-pixel";
 
 const initialForm: LeadFormData = {
   name: "",
@@ -42,6 +43,7 @@ export default function LandingLeadForm() {
     }
 
     const url = getLeadWhatsAppUrl(form);
+    trackMetaLead();
     window.open(url, "_blank", "noopener,noreferrer");
     setSubmitted(true);
   };
