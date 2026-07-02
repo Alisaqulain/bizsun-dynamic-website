@@ -45,8 +45,8 @@ export default function GetStartedPage() {
               priority
             />
           </Link>
-          <a href="tel:+917044178863" className="text-sm text-zinc-400 hover:text-brand-green transition-colors hidden sm:block">
-            +91 7044178863
+          <a href="tel:+919113661064" className="text-sm text-zinc-400 hover:text-brand-green transition-colors hidden sm:block">
+            +91 9113661064
           </a>
         </div>
       </header>

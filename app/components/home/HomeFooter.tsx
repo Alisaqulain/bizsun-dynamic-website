@@ -81,10 +81,10 @@ export default function HomeFooter() {
                     Strategy, design, and technology — built to help ambitious brands grow with clarity and confidence.
                   </p>
                   <a
-                    href="mailto:info@bizsoncreative.com"
+                    href="mailto:contact@bizsuncreative.com"
                     className="text-sm text-zinc-400 hover:text-brand-green transition-colors mb-6 block"
                   >
-                    info@bizsoncreative.com
+                    contact@bizsuncreative.com
                   </a>
                   <div className="mt-auto flex flex-wrap gap-3">
                     <Link href="/get-started" className="btn-glow text-sm">
@@ -126,8 +126,8 @@ export default function HomeFooter() {
                     <ul className="space-y-3 text-sm text-zinc-400">
                       <li>
                         <span className="block text-[10px] uppercase tracking-widest text-zinc-600 mb-1">Email</span>
-                        <a href="mailto:info@bizsoncreative.com" className="link-glow hover:text-white transition-colors">
-                          info@bizsoncreative.com
+                        <a href="mailto:contact@bizsuncreative.com" className="link-glow hover:text-white transition-colors">
+                          contact@bizsuncreative.com
                         </a>
                       </li>
                       <li>

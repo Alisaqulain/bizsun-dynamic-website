@@ -60,14 +60,14 @@ export default function PrivacyPolicyPage() {
               <ul>
                 <li>
                   <strong>Email:</strong>{" "}
-                  <a href="mailto:info@bizsoncreative.com" className="legal-link">
-                    info@bizsoncreative.com
+                  <a href="mailto:contact@bizsuncreative.com" className="legal-link">
+                    contact@bizsuncreative.com
                   </a>
                 </li>
                 <li>
                   <strong>Phone:</strong>{" "}
-                  <a href="tel:+917044178863" className="legal-link">
-                    +91 7044178863
+                  <a href="tel:+919113661064" className="legal-link">
+                    +91 9113661064
                   </a>
                 </li>
                 <li>
@@ -254,8 +254,8 @@ export default function PrivacyPolicyPage() {
               </ul>
               <p>
                 To exercise these rights, email us at{" "}
-                <a href="mailto:info@bizsoncreative.com" className="legal-link">
-                  info@bizsoncreative.com
+                <a href="mailto:contact@bizsuncreative.com" className="legal-link">
+                  contact@bizsuncreative.com
                 </a>
                 . We will respond within a reasonable timeframe.
               </p>
@@ -307,14 +307,14 @@ export default function PrivacyPolicyPage() {
               <ul>
                 <li>
                   Email:{" "}
-                  <a href="mailto:info@bizsoncreative.com" className="legal-link">
-                    info@bizsoncreative.com
+                  <a href="mailto:contact@bizsuncreative.com" className="legal-link">
+                    contact@bizsuncreative.com
                   </a>
                 </li>
                 <li>
                   Phone:{" "}
-                  <a href="tel:+917044178863" className="legal-link">
-                    +91 7044178863
+                  <a href="tel:+919113661064" className="legal-link">
+                    +91 9113661064
                   </a>
                 </li>
                 <li>

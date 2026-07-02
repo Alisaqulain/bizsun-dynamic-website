@@ -2,7 +2,7 @@ import { services } from "./home-data";
 
 /** WhatsApp number for lead notifications (Abhinav). Override via env in production. */
 export const LEAD_WHATSAPP_NUMBER =
-  process.env.NEXT_PUBLIC_WHATSAPP_LEAD_NUMBER || "917044178863";
+  process.env.NEXT_PUBLIC_WHATSAPP_LEAD_NUMBER || "919113661064";
 
 export const leadServiceOptions = [
   ...services.map((s) => s.title),

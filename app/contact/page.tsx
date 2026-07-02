@@ -185,10 +185,10 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-bold text-gray-800 mb-1">Email</h3>
                       <a 
-                        href="mailto:info@bizsoncreative.com" 
+                        href="mailto:contact@bizsuncreative.com" 
                         className="text-gray-600 hover:text-green-600 transition-colors"
                       >
-                        info@bizsoncreative.com
+                        contact@bizsuncreative.com
                       </a>
                     </div>
                   </div>
@@ -203,10 +203,10 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-bold text-gray-800 mb-1">Phone</h3>
                       <a 
-                        href="tel:+917044178863" 
+                        href="tel:+919113661064" 
                         className="text-gray-600 hover:text-green-600 transition-colors"
                       >
-                        +91 7044178863
+                        +91 9113661064
                       </a>
                     </div>
                   </div>
