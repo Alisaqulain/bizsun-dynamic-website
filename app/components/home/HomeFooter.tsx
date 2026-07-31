@@ -29,9 +29,9 @@ const links = {
 };
 
 const socials = [
-  { label: "LinkedIn", href: "https://linkedin.com" },
-  { label: "Instagram", href: "https://instagram.com" },
-  { label: "Twitter", href: "https://twitter.com" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/bizsun-creative-1973543a5/" },
+  { label: "Instagram", href: "https://www.instagram.com/bizsun_creatives/" },
+  { label: "Facebook", href: "https://www.facebook.com/bizsuncreative/" },
 ];
 
 function FooterColumn({

@@ -72,6 +72,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16.png", type: "image/png", sizes: "16x16" },
+      { url: "/favicon.png", type: "image/png", sizes: "any" },
+    ],
+    apple: [{ url: "/logo.png", type: "image/png" }],
+    shortcut: "/favicon.ico",
+  },
   category: "technology",
   other: {
     "format-detection": "telephone=no",
@@ -90,9 +100,9 @@ const jsonLdOrganization = {
   logo: `${SITE_URL}/logo.png`,
   description: defaultMetadata.description,
   sameAs: [
-    // Add your social URLs when available, e.g.:
-    // "https://www.linkedin.com/company/bizsun-creative",
-    // "https://twitter.com/bizsuncreative",
+    "https://www.linkedin.com/in/bizsun-creative-1973543a5/",
+    "https://www.instagram.com/bizsun_creatives/",
+    "https://www.facebook.com/bizsuncreative/",
   ],
   contactPoint: {
     "@type": "ContactPoint",
