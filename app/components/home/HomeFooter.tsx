@@ -64,11 +64,11 @@ export default function HomeFooter() {
                 <div className="lg:col-span-4 flex flex-col h-full">
                   <Link href="/" className="inline-block mb-6 w-fit">
                     <Image
-                      src="/logo.png"
+                      src="/bizsun-logo.png"
                       alt="Bizsun Creative"
-                      width={130}
-                      height={44}
-                      className="h-9 w-auto brightness-110"
+                      width={220}
+                      height={56}
+                      className="h-10 w-auto sm:h-11"
                     />
                   </Link>
                   <p className="text-[11px] uppercase tracking-[0.2em] text-zinc-500 mb-2">

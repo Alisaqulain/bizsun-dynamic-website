@@ -55,11 +55,11 @@ export default function HomeHeader() {
         <div className="site-header-bar relative z-[102] mx-auto flex h-[4.25rem] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="/" className="shrink-0" onClick={() => setOpen(false)}>
             <Image
-              src="/logo.png"
+              src="/bizsun-logo.png"
               alt="Bizsun Creative"
-              width={140}
-              height={46}
-              className="h-auto w-[104px] sm:w-[120px] lg:w-[130px]"
+              width={220}
+              height={56}
+              className="h-9 w-auto sm:h-10 lg:h-11"
               priority
             />
           </Link>
