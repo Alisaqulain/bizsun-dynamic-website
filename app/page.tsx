@@ -1,28 +1,22 @@
-import type { Metadata } from "next";
 import HomePage from "./components/home/HomePage";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Digital Agency | Software, Marketing, Design & Technology",
+export const metadata = createPageMetadata({
+  title: "IT Company in Bangalore | Digital Marketing & Web Development | Bizsun Creative",
   description:
-    "Bizsun Creative builds scalable digital growth with strategy, design & technology. Custom software, digital marketing, SEO, branding, web & app development, analytics & automation for businesses.",
+    "Bizsun Creative — IT company in Bangalore & Bengaluru (BTM Layout, near Electronic City). Digital marketing, SEO, web development, software & branding. Get a free consultation.",
+  path: "/",
   keywords: [
-    "digital agency",
-    "software development",
-    "digital marketing",
-    "web development",
-    "app development",
-    "branding",
-    "SEO",
-    "digital growth",
-    "Bizsun Creative",
+    "IT company in Bangalore",
+    "IT company in Bengaluru",
+    "digital marketing agency in Bangalore",
+    "web development company in Bangalore",
+    "SEO company in Bangalore",
+    "IT company in BTM Layout",
+    "IT company near Electronic City",
   ],
-  openGraph: {
-    title: "Bizsun Creative | Building Scalable Digital Growth",
-    description:
-      "Strategy, design & technology. Software development, digital marketing, branding, web & app development, analytics & automation.",
-    url: "/",
-  },
-};
+  absoluteTitle: true,
+});
 
 export default function Home() {
   return <HomePage />;

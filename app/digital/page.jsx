@@ -7,13 +7,15 @@ import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 import TeamSection from "../components/TeamSection";
 import TrustSection from "../components/TrustSection";
+import { SITE_URL } from "@/lib/seo";
 
 export const metadata = {
-  title: "Digital Marketing | SEO, Social Media & Content",
+  title: "Digital Marketing Agency in Bangalore | SEO & Social Media",
   description:
-    "Digital marketing services: SEO, SEM, social media marketing, content marketing, and email marketing. Data-driven campaigns that drive growth and engagement.",
-  keywords: ["digital marketing", "SEO services", "SEM", "social media marketing", "content marketing", "email marketing"],
-  openGraph: { title: "Digital Marketing Services | Bizsun Creative", url: "/digital" },
+    "Digital marketing agency in Bangalore & Bengaluru — SEO, SEM, social media, and content marketing by Bizsun Creative, IT company in BTM Layout near Electronic City.",
+  keywords: ["digital marketing agency in Bangalore", "SEO company in Bangalore", "social media marketing Bangalore", "IT company in Bengaluru"],
+  openGraph: { title: "Digital Marketing in Bangalore | Bizsun Creative", url: "/digital" },
+  alternates: { canonical: `${SITE_URL}/digital` },
 };
 
 export default function DigitalPage() {

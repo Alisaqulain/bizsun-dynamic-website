@@ -1,6 +1,8 @@
 /**
  * Central SEO config. Set your live domain here before deployment.
  */
+import { localKeywords } from "./business";
+
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.bizsuncreative.com";
 
 /** Keep in sync with `public/robots.txt` (Sitemap line uses SITE_URL at deploy). */
@@ -8,23 +10,13 @@ export const ROBOTS_SITEMAP_URL = `${SITE_URL}/sitemap.xml`;
 
 export const defaultMetadata = {
   siteName: "Bizsun Creative",
-  title: "Bizsun Creative | Digital Agency – Software, Marketing, Design & Technology",
+  title: "IT Company in Bangalore | Digital Marketing & Web Development | Bizsun Creative",
   description:
-    "Full-service digital agency: custom software development, digital marketing, SEO, branding, web & app development, analytics, and automation. Build scalable digital growth.",
-  keywords: [
-    "digital agency",
-    "software development company",
-    "digital marketing agency",
-    "web development",
-    "app development",
-    "branding agency",
-    "SEO services",
-    "digital growth",
-    "Bizsun Creative",
-  ],
+    "Bizsun Creative is an IT company in Bangalore & Bengaluru (BTM Layout, near Electronic City) offering digital marketing, SEO, web development, software, and branding services.",
+  keywords: [...localKeywords],
   openGraph: {
     type: "website" as const,
-    locale: "en_US",
+    locale: "en_IN",
   },
   twitter: {
     card: "summary_large_image" as const,
@@ -33,6 +25,7 @@ export const defaultMetadata = {
 
 export const routes = [
   { path: "/", priority: 1, changeFrequency: "weekly" as const },
+  { path: "/digital-marketing-agency-bangalore", priority: 0.95, changeFrequency: "weekly" as const },
   { path: "/about-us", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/contact", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/software", priority: 0.9, changeFrequency: "monthly" as const },

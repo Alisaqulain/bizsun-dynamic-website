@@ -25,7 +25,7 @@ function Counter({ value }: { value: number }) {
     obs.observe(el);
     return () => obs.disconnect();
   }, [value]);
-  return <span ref={ref}>+0</span>;
+  return <span ref={ref}>+{value}</span>;
 }
 
 export default function WhyChooseSection() {

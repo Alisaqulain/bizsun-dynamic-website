@@ -6,13 +6,16 @@ import Footer from "../components/Footer";
 import TrustSection from "../components/TrustSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import TeamSection from "../components/TeamSection";
+import { SITE_URL } from "@/lib/seo";
+import { business } from "@/lib/business";
 
 export const metadata = {
-  title: "About Us | Digital Agency – Our Story & Team",
+  title: "About Us | IT Company in Bengaluru, BTM Layout",
   description:
-    "Bizsun Creative is a full-service digital agency. Learn our story, meet our founder, and discover our approach to strategy, design, and technology for scalable growth.",
-  keywords: ["about Bizsun Creative", "digital agency team", "founder", "our story", "digital strategy"],
-  openGraph: { title: "About Bizsun Creative | Our Story & Team", url: "/about-us" },
+    "About Bizsun Creative — IT company in Bangalore & Bengaluru, based in BTM Layout near Electronic City. Digital marketing, SEO, web development & branding.",
+  keywords: ["about Bizsun Creative", "IT company in Bangalore", "IT company BTM Layout", "digital agency Bengaluru"],
+  openGraph: { title: "About Bizsun Creative | IT Company in Bengaluru", url: "/about-us" },
+  alternates: { canonical: `${SITE_URL}/about-us` },
 };
 
 export default function AboutUsPage() {
@@ -98,7 +101,7 @@ export default function AboutUsPage() {
       <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">Our Presence Across India</h2>
         <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-4xl mx-auto mb-6 sm:mb-8 leading-relaxed">
-          With a growing team and operations across multiple cities, Bizsun Creative serves clients nationwide with a local understanding and global outlook.
+          Our primary office is in BTM Layout, Bengaluru — {business.addressDisplay}. We also serve clients across Bangalore and India.
         </p>
         
         {/* Cities List */}

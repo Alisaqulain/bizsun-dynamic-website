@@ -14,6 +14,9 @@ export default function ServicesSection() {
         <Reveal className="text-center mb-16">
           <SectionTag>Services</SectionTag>
           <SectionHeading>What we do best</SectionHeading>
+          <p className="text-zinc-400 mt-4 max-w-2xl mx-auto">
+            IT, digital marketing, web development & branding for businesses in Bangalore, Bengaluru & across India.
+          </p>
         </Reveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

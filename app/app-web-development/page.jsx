@@ -7,13 +7,15 @@ import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 import TeamSection from "../components/TeamSection";
 import TrustSection from "../components/TrustSection";
+import { SITE_URL } from "@/lib/seo";
 
 export const metadata = {
-  title: "App & Web Development | Mobile, iOS, Android & Web Apps",
+  title: "Web Development Company in Bangalore | App & Web Development",
   description:
-    "Android, iOS, and cross-platform app development. Web applications, SaaS, and app maintenance. Flutter, React Native, and custom web solutions.",
-  keywords: ["app development", "web development", "Android app", "iOS app", "Flutter", "React Native", "mobile app"],
-  openGraph: { title: "App & Web Development | Bizsun Creative", url: "/app-web-development" },
+    "Web development company in Bangalore & Bengaluru — custom websites, web apps, Android & iOS development by Bizsun Creative, IT company in BTM Layout near Electronic City.",
+  keywords: ["web development company in Bangalore", "website development company in Bangalore", "app development Bangalore", "IT company in Bengaluru"],
+  openGraph: { title: "Web Development in Bangalore | Bizsun Creative", url: "/app-web-development" },
+  alternates: { canonical: `${SITE_URL}/app-web-development` },
 };
 
 export default function AppWebDevelopmentPage() {

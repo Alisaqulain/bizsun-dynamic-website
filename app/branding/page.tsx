@@ -8,13 +8,15 @@ import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 import TeamSection from "../components/TeamSection";
 import TrustSection from "../components/TrustSection";
+import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Website & Branding | Design, UI/UX & Brand Identity",
+  title: "Branding Agency in Bangalore | Website Design & Brand Identity",
   description:
-    "Website design & development, UI/UX design, branding and creative design. Responsive websites and brand identity that build trust and drive growth.",
-  keywords: ["website design", "branding", "UI/UX design", "brand identity", "web development", "creative design"],
-  openGraph: { title: "Website & Branding Services | Bizsun Creative", url: "/branding" },
+    "Branding agency in Bangalore & Bengaluru — website design, UI/UX, logos, and brand identity by Bizsun Creative, IT company in BTM Layout near Electronic City.",
+  keywords: ["branding agency in Bangalore", "creative agency in Bangalore", "website design company in Bangalore", "IT company in Bengaluru"],
+  openGraph: { title: "Branding Agency in Bangalore | Bizsun Creative", url: "/branding" },
+  alternates: { canonical: `${SITE_URL}/branding` },
 };
 
 export default function BrandingPage() {

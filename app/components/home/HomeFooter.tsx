@@ -26,6 +26,12 @@ const links = {
     { href: "/automation", label: "Automation & CRM" },
     { href: "/industry-focused", label: "Industry Focused" },
   ],
+  Bangalore: [
+    { href: "/digital-marketing-agency-bangalore", label: "Digital Marketing in Bangalore" },
+    { href: "/digital", label: "SEO & Digital Marketing" },
+    { href: "/app-web-development", label: "Web Development" },
+    { href: "/software", label: "Software / IT Services" },
+  ],
 };
 
 const socials = [
@@ -120,29 +126,6 @@ export default function HomeFooter() {
                   </div>
                 ))}
 
-                {/* Contact quick info */}
-                <div className="lg:col-span-2 sm:col-span-2">
-                  <FooterColumn title="Get in Touch">
-                    <ul className="space-y-3 text-sm text-zinc-400">
-                      <li>
-                        <span className="block text-[10px] uppercase tracking-widest text-zinc-600 mb-1">Email</span>
-                        <a href="mailto:info@bizsoncreative.com" className="link-glow hover:text-white transition-colors">
-                          info@bizsoncreative.com
-                        </a>
-                      </li>
-                      <li>
-                        <span className="block text-[10px] uppercase tracking-widest text-zinc-600 mb-1">Careers</span>
-                        <Link href="/join-our-team" className="link-glow hover:text-white transition-colors">
-                          Join Our Team
-                        </Link>
-                      </li>
-                      <li>
-                        <span className="block text-[10px] uppercase tracking-widest text-zinc-600 mb-1">Location</span>
-                        <span className="text-zinc-400">India · Remote Worldwide</span>
-                      </li>
-                    </ul>
-                  </FooterColumn>
-                </div>
               </div>
             </div>
 

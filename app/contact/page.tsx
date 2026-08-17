@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import TrustSection from "../components/TrustSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import TeamSection from "../components/TeamSection";
+import { business } from "@/lib/business";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -220,8 +221,8 @@ export default function ContactPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-800 mb-1">Locations</h3>
-                      <p className="text-gray-600">Kolkata</p>
+                      <h3 className="font-bold text-gray-800 mb-1">Office</h3>
+                      <p className="text-gray-600 leading-relaxed">{business.addressDisplay}</p>
                     </div>
                   </div>
 
@@ -246,11 +247,12 @@ export default function ContactPage() {
           <div className="mt-8 sm:mt-12 md:mt-16 max-w-7xl mx-auto px-4 sm:px-6">
             <div className="contact-form-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10">
               <h2 className="font-syne text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 sm:mb-6 text-center">
-                Find Us on Map
+                Find Us in BTM Layout, Bengaluru
               </h2>
               <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] rounded-xl sm:rounded-2xl overflow-hidden shadow-md">
                 <iframe
-                  src="https://www.google.com/maps?q=22.6008889,88.4258333&hl=en&z=15&output=embed"
+                  src={business.mapsEmbedUrl}
+                  title="Bizsun Creative office — BTM Layout, Bengaluru, near Electronic City"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -262,11 +264,16 @@ export default function ContactPage() {
               </div>
               <div className="mt-6 text-center">
                 <p className="text-zinc-300 mb-2">
-                  <strong className="text-white">Address:</strong> Kolkata, West Bengal, India
+                  <strong className="text-white">Address:</strong> {business.addressDisplay}
                 </p>
-                <p className="text-sm text-zinc-500">
-                  Coordinates: 22°36&apos;03.2&quot;N, 88°25&apos;33.0&quot;E
-                </p>
+                <a
+                  href={business.mapsLinkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-green hover:underline text-sm"
+                >
+                  Get directions on Google Maps
+                </a>
               </div>
             </div>
           </div>

@@ -8,13 +8,15 @@ import Footer from "../components/Footer";
 import TestimonialSection from "@/components/TestimonialSection";
 import TeamSection from "../components/TeamSection";
 import TrustSection from "../components/TrustSection";
+import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Software Development | Custom & Enterprise Solutions",
+  title: "Software Company in Bangalore | Custom Software Development",
   description:
-    "Custom software development, enterprise solutions, API development & integration, and software maintenance. Scalable, secure systems that power business growth.",
-  keywords: ["custom software development", "enterprise software", "API development", "software solutions", "Bizsun"],
-  openGraph: { title: "Software Development Services | Bizsun Creative", url: "/software" },
+    "Software company in Bangalore & Bengaluru — custom software, enterprise systems, and API development by Bizsun Creative, IT company in BTM Layout near Electronic City.",
+  keywords: ["software company in Bangalore", "IT company in Bengaluru", "custom software development Bangalore", "software company BTM Layout"],
+  openGraph: { title: "Software Development in Bangalore | Bizsun Creative", url: "/software" },
+  alternates: { canonical: `${SITE_URL}/software` },
 };
 
 export default function SoftwarePage() {
